@@ -7,3 +7,5 @@
 [Ophef in de Kamer: ex-voorzitters Siegfried Bracke en Herman De Croo hebben onwettige pensioenextra's gekregen (1 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/01/bureau-van-de-kamer-stuit-op-onwettige-pensioenextra-s/)
 
 [ACV-voorzitter Marc Leemans laat zich ontslaan om werkloosheidsuitkering te krijgen (1 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/01/kritiek-op-brugpensioenregeling-acv-voorzitter-marc-leemans/)
+
+[Ambtenaren en oud-Kamervoorzitters kregen jarenlang  vergoeding bovenop pensioen: dit weten we al over de zaak (2 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/02/pensioenextra-s-wat-weten-we-al/)
