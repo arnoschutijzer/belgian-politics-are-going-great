@@ -11,3 +11,5 @@
 [Ambtenaren en oud-Kamervoorzitters kregen jarenlang  vergoeding bovenop pensioen: dit weten we al over de zaak (2 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/02/pensioenextra-s-wat-weten-we-al/)
 
 [Burgemeester Herent over vermeende subsidiefraude: "Oppositie heeft informatie gelekt" (7 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/07/burgemeester-herent-over-vermeende-subsidiefraude-oppositie-he/)
+
+["Spookleden" verdeelt Open VLD-afdeling Brussel-Stad (7 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/07/spookleden-verdeelt-open-vld-afdeling-brussel-stad/)
