@@ -16,4 +16,4 @@
 
 ["Spookleden" verdeelt Open VLD-afdeling Brussel-Stad (7 maart 2023)](https://www.vrt.be/vrtnws/nl/2023/03/07/spookleden-verdeelt-open-vld-afdeling-brussel-stad/)
 
-[Charles Michel onder vuur voor "buitensporige reisonkosten"](https://www.vrt.be/vrtnws/nl/2023/04/12/charles-michel-onder-vuur/)
+[Charles Michel onder vuur voor "buitensporige reisonkosten" (12 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/12/charles-michel-onder-vuur/)
