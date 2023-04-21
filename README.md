@@ -21,3 +21,5 @@
 [Krijgt pensioensaga in de Kamer een Vlaams vervolg? "Vlaams Parlement omzeilt pensioenplafond al 10 jaar langer" (19 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/19/jos-d-haese-onthulling-vlaams-parlement-pensioenen/)
 
 [Staatssecretaris Sarah Schlitz (Ecolo) krijgt voorwaardelijke steun en moet voorlopig niet opstappen na ophef over persoonlijk logo (20 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/20/loog-staatssecretaris-schlitz-in-het-parlement-onder-vuur-voor/)
+
+[PVDA diept verslag op met daarin afspraak over omzeiling pensioenplafond: "Alle partijen stemden in" (21 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/21/pvda-pensioen-document/)
