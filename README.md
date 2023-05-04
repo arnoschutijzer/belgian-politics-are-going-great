@@ -27,3 +27,5 @@
 [PVDA diept verslag op met daarin afspraak over omzeiling pensioenplafond: "Alle partijen stemden in" (21 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/21/pvda-pensioen-document/)
 
 [Ook in Vlaams Parlement werd omstreden pensioenregeling goedgekeurd door alle partijen (behalve PVDA) (22 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/22/ook-in-vlaams-parlement-werd-omstreden-pensioenregeling-goedgeke/)
+
+[Twee kabinetsmedewerkers van minister De Sutter staan op loonlijst Bpost: "Praktijk uit verleden, we zetten dit stop" (3 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/03/twee-kabinetsmedewerkers-van-minister-de-sutter-staan-op-loonlij/)
