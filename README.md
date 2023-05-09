@@ -29,3 +29,5 @@
 [Ook in Vlaams Parlement werd omstreden pensioenregeling goedgekeurd door alle partijen (behalve PVDA) (22 april 2023)](https://www.vrt.be/vrtnws/nl/2023/04/22/ook-in-vlaams-parlement-werd-omstreden-pensioenregeling-goedgeke/)
 
 [Twee kabinetsmedewerkers van minister De Sutter staan op loonlijst Bpost: "Praktijk uit verleden, we zetten dit stop" (3 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/03/twee-kabinetsmedewerkers-van-minister-de-sutter-staan-op-loonlij/)
+
+[Consultants konden miljoenen verdienen aan Bpost zonder openbare aanbesteding (9 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/09/consultants-konden-miljoenen-verdienen-aan-bpost-zonder-openbare/)
