@@ -32,4 +32,6 @@
 
 [Consultants konden miljoenen verdienen aan Bpost zonder openbare aanbesteding (9 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/09/consultants-konden-miljoenen-verdienen-aan-bpost-zonder-openbare/)
 
+[EU-Parlementslid Marc Tarabella in tranen na vrijlating in Europees corruptieschandaal: "Ik heb er niks mee te maken" (10 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/10/qatargate-marc-tarabella-in-tranen/)
+
 [Ook op Vlaamse kabinet Jan Jambon (N-VA) werkte jarenlang medewerker die betaald werd door Bpost: "Zullen loon terugbetalen" (13 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/12/jambon-bpost/)
