@@ -35,3 +35,5 @@
 [EU-Parlementslid Marc Tarabella in tranen na vrijlating in Europees corruptieschandaal: "Ik heb er niks mee te maken" (10 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/10/qatargate-marc-tarabella-in-tranen/)
 
 [Ook op Vlaamse kabinet Jan Jambon (N-VA) werkte jarenlang medewerker die betaald werd door Bpost: "Zullen loon terugbetalen" (13 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/12/jambon-bpost/)
+
+[Adviseur van minister van Mobiliteit Lydia Peeters biedt ook rijopleidingen aan (15 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/15/adviseur-van-minister-van-mobiliteit-lydia-peeters-biedt-ook-rij/)
