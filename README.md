@@ -37,3 +37,5 @@
 [Ook op Vlaamse kabinet Jan Jambon (N-VA) werkte jarenlang medewerker die betaald werd door Bpost: "Zullen loon terugbetalen" (13 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/12/jambon-bpost/)
 
 [Adviseur van minister van Mobiliteit Lydia Peeters biedt ook rijopleidingen aan (15 mei 2023)](https://www.vrt.be/vrtnws/nl/2023/05/15/adviseur-van-minister-van-mobiliteit-lydia-peeters-biedt-ook-rij/)
+
+[“Bpost zou honderden miljoenen subsidies te veel hebben gekregen": bezwarende nota lekt uit in nieuw boek over postbedrijf (18 juli 2023)](https://www.vrt.be/vrtnws/nl/2023/07/17/bpost-nota-boek/)
