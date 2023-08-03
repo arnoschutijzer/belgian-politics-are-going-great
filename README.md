@@ -41,3 +41,5 @@
 [Jan Jambon bracht facturatie gedetacheerde havenmedewerker in orde na uitbreken Bpost-schandaal (13 juli 2023)](https://www.vrt.be/vrtnws/nl/2023/07/13/jambon-havenmedewerker-commissie-algemeen-beleid/)
 
 [“Bpost zou honderden miljoenen subsidies te veel hebben gekregen": bezwarende nota lekt uit in nieuw boek over postbedrijf (18 juli 2023)](https://www.vrt.be/vrtnws/nl/2023/07/17/bpost-nota-boek/)
+
+[Oud-ambtenaren van Kamer krijgen gelijk in kortgeding: Pensioendienst mag onwettige extra's niet zomaar terugschroeven (3 augustus 2023)](https://www.vrt.be/vrtnws/nl/2023/08/03/pensioenextra-s-kortgeding/)
