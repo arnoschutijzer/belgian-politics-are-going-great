@@ -43,3 +43,5 @@
 [“Bpost zou honderden miljoenen subsidies te veel hebben gekregen": bezwarende nota lekt uit in nieuw boek over postbedrijf (18 juli 2023)](https://www.vrt.be/vrtnws/nl/2023/07/17/bpost-nota-boek/)
 
 [Oud-ambtenaren van Kamer krijgen gelijk in kortgeding: Pensioendienst mag onwettige extra's niet zomaar terugschroeven (3 augustus 2023)](https://www.vrt.be/vrtnws/nl/2023/08/03/pensioenextra-s-kortgeding/)
+
+[Ex-Kamervoorzitter Siegfried Bracke dient verzoekschrift in bij Raad van State om pensioenvergoeding te behouden (4 augustus 2023)](https://www.vrt.be/vrtnws/nl/2023/08/04/siegfried-bracke-verzoekschrift-pensioen-raad-van-state/)
