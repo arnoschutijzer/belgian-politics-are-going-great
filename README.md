@@ -48,4 +48,6 @@
 
 [Burgemeester Haaltert stemt in met herverdeling bevoegdheden na mogelijke subsidiefraude (29 augustus 2023)](https://www.vrt.be/vrtnws/nl/2023/08/28/herverdeling-bevoegdheden-burgemeester-veerle-baeyens-haaltert/)
 
+[Drie keer plassen tegen combi en ook minister Van Quickenborne zelf duikt op in video: wat is er precies te zien op de beelden van zijn feest? (4 september 2023)](https://www.vrt.be/vrtnws/nl/2023/09/04/beelden-incident-combi-bij-van-quickenborne/)
+
 [Gewezen burgemeester van Sint-Truiden Veerle Heeren (CD&V) stapt volgend jaar uit de politiek (4 september 2023)](https://www.vrt.be/vrtnws/nl/2023/09/04/veerle-heeren-stopt-met-politiek/)
