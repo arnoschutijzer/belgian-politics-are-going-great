@@ -53,3 +53,5 @@
 [Gewezen burgemeester van Sint-Truiden Veerle Heeren (CD&V) stapt volgend jaar uit de politiek (4 september 2023)](https://www.vrt.be/vrtnws/nl/2023/09/04/veerle-heeren-stopt-met-politiek/)
 
 [Audit Vlaanderen stelt onregelmatigheden vast bij vergunning van overheidscontracten in Knokke-Heist (22 september 2023)](https://www.vrt.be/vrtnws/nl/2023/09/21/audit-vlaanderen-ziet-mogelijke-belangenvermenging-in-knokke-hei/)
+
+[Buurtbewoners in Knokke voelen zich bedreigd door vastgoedmagnaat Paul Gheysens en getuigen in "Pano": "Hij keek veelzeggend naar mijn zoontjes" (29 november 2023)](https://www.vrt.be/vrtnws/nl/2023/11/28/pano-knokke/)
