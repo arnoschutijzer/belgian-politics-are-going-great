@@ -55,3 +55,5 @@
 [Audit Vlaanderen stelt onregelmatigheden vast bij vergunning van overheidscontracten in Knokke-Heist (22 september 2023)](https://www.vrt.be/vrtnws/nl/2023/09/21/audit-vlaanderen-ziet-mogelijke-belangenvermenging-in-knokke-hei/)
 
 [Buurtbewoners in Knokke voelen zich bedreigd door vastgoedmagnaat Paul Gheysens en getuigen in "Pano": "Hij keek veelzeggend naar mijn zoontjes" (29 november 2023)](https://www.vrt.be/vrtnws/nl/2023/11/28/pano-knokke/)
+
+[Burgemeester van Wielsbeke betaalt al 27 jaar geen leegstandstaks voor huis dat al die tijd leegstaat](https://www.vrt.be/vrtnws/nl/2024/01/05/burgemeester-van-wielsbeke-betaalt-al-27-jaar-geen-leegstandsbel/)
