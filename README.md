@@ -56,4 +56,7 @@
 
 [Buurtbewoners in Knokke voelen zich bedreigd door vastgoedmagnaat Paul Gheysens en getuigen in "Pano": "Hij keek veelzeggend naar mijn zoontjes" (29 november 2023)](https://www.vrt.be/vrtnws/nl/2023/11/28/pano-knokke/)
 
-[Burgemeester van Wielsbeke betaalt al 27 jaar geen leegstandstaks voor huis dat al die tijd leegstaat](https://www.vrt.be/vrtnws/nl/2024/01/05/burgemeester-van-wielsbeke-betaalt-al-27-jaar-geen-leegstandsbel/)
+[Burgemeester van Wielsbeke betaalt al 27 jaar geen leegstandstaks voor huis dat al die tijd leegstaat (5 januari 2024)](https://www.vrt.be/vrtnws/nl/2024/01/05/burgemeester-van-wielsbeke-betaalt-al-27-jaar-geen-leegstandsbel/)
+
+## not politics
+[Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
