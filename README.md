@@ -2,6 +2,8 @@
 
 [Zaak-Sihame El Kaouakibi (29 maart 2021)](https://www.vrt.be/vrtnws/nl/dossiers/2021/02/zaak-sihame-el-kaouakibi/)
 
+[Politievakbond vraagt onderzoek naar mogelijk machtsmisbruik door burgemeester van Haaltert (20 oktober 2024)](https://www.vrt.be/vrtnws/nl/2022/10/20/politievakbond-vraagt-onderzoek-naar-mogelijk-machtsmisbruik-doo/)
+
 [Probeerde Qatar invloed te kopen in het Europees Parlement? 16 huiszoekingen en 4 arrestaties na actie van federaal parket (9 december 2022)](https://www.vrt.be/vrtnws/nl/2022/12/09/probeerde-qatar-invloed-te-kopen-in-het-europees-parlement-16-h/)
 
 [Antwerpse gouverneur onderzoekt gevolgen van audit over belangenvermenging door burgemeester Boechout (28 februari 2023)](https://www.vrt.be/vrtnws/nl/2023/02/28/gouverneur-bekijkt-wat-verdere-gevolgen-zijn-van-audit-over-moge/)
@@ -57,6 +59,8 @@
 [Buurtbewoners in Knokke voelen zich bedreigd door vastgoedmagnaat Paul Gheysens en getuigen in "Pano": "Hij keek veelzeggend naar mijn zoontjes" (29 november 2023)](https://www.vrt.be/vrtnws/nl/2023/11/28/pano-knokke/)
 
 [Burgemeester van Wielsbeke betaalt al 27 jaar geen leegstandstaks voor huis dat al die tijd leegstaat (5 januari 2024)](https://www.vrt.be/vrtnws/nl/2024/01/05/burgemeester-van-wielsbeke-betaalt-al-27-jaar-geen-leegstandsbel/)
+
+[Nieuwe klacht tegen burgemeester van Haaltert omdat ze bevriend bouwbedrijf vergunning zou hebben gegeven ondanks negatief advies (24 februari 2024)](https://www.vrt.be/vrtnws/nl/2024/02/14/opnieuw-klacht-tegen-burgemeester-haaltert-wegens-vergunning-aan/)
 
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
