@@ -62,6 +62,8 @@
 
 [Nieuwe klacht tegen burgemeester van Haaltert omdat ze bevriend bouwbedrijf vergunning zou hebben gegeven ondanks negatief advies (24 februari 2024)](https://www.vrt.be/vrtnws/nl/2024/02/14/opnieuw-klacht-tegen-burgemeester-haaltert-wegens-vergunning-aan/)
 
+[Oostendse schepen Kurt Claeys (Open VLD) prees afgelopen jaren dubieuze investeringen aan in en rond de stad (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/14/schepen-oostende-beleggingen-investeringen/)
+
 [Oostends schepen Kurt Claeys neemt onmiddellijk ontslag na getuigenissen over dubieuze investeringen: "Lasterlijke aantijgingen" (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/kurt-claeys-komt-niet-op/)
 
 [N-VA-kopstuk Sander Loones uit Koksijde moet van Natuur en Bos serre afbreken in zijn tuin (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/nv-a-kopstuk-sander-loones-uit-koksijde-moet-van-natuur-en-bos-s/)
