@@ -64,5 +64,7 @@
 
 [Oostends schepen Kurt Claeys neemt onmiddellijk ontslag na getuigenissen over dubieuze investeringen: "Lasterlijke aantijgingen" (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/kurt-claeys-komt-niet-op/)
 
+[N-VA-kopstuk Sander Loones uit Koksijde moet van Natuur en Bos serre afbreken in zijn tuin (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/nv-a-kopstuk-sander-loones-uit-koksijde-moet-van-natuur-en-bos-s/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
