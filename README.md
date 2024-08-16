@@ -62,5 +62,7 @@
 
 [Nieuwe klacht tegen burgemeester van Haaltert omdat ze bevriend bouwbedrijf vergunning zou hebben gegeven ondanks negatief advies (24 februari 2024)](https://www.vrt.be/vrtnws/nl/2024/02/14/opnieuw-klacht-tegen-burgemeester-haaltert-wegens-vergunning-aan/)
 
+[Oostends schepen Kurt Claeys neemt onmiddellijk ontslag na getuigenissen over dubieuze investeringen: "Lasterlijke aantijgingen" (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/kurt-claeys-komt-niet-op/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
