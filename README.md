@@ -68,5 +68,7 @@
 
 [N-VA-kopstuk Sander Loones uit Koksijde moet van Natuur en Bos serre afbreken in zijn tuin (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/nv-a-kopstuk-sander-loones-uit-koksijde-moet-van-natuur-en-bos-s/)
 
+[Rechter verbiedt Le Soir om artikel te publiceren over kandidaat-burgemeester in Verviers: "Preventieve censuur" (12 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
