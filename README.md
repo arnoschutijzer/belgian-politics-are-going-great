@@ -70,6 +70,8 @@
 
 [N-VA-kopstuk Sander Loones uit Koksijde moet van Natuur en Bos serre afbreken in zijn tuin (16 augustus 2024)](https://www.vrt.be/vrtnws/nl/2024/08/16/nv-a-kopstuk-sander-loones-uit-koksijde-moet-van-natuur-en-bos-s/)
 
+["Het is ons door de strot geboord," de fusie tussen Beveren, Kruibeke en Zwijndrecht blijft moeilijk (2 oktober 2024)](https://vrtnws.be/p.YaxeW9Ox8L4)
+
 [Rechter verbiedt Le Soir om artikel te publiceren over kandidaat-burgemeester in Verviers: "Preventieve censuur" (12 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/)
 
 ## not politics
