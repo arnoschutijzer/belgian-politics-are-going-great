@@ -74,5 +74,7 @@
 
 [Rechter verbiedt Le Soir om artikel te publiceren over kandidaat-burgemeester in Verviers: "Preventieve censuur" (12 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/)
 
+[Duizenden euro's leefloon met verzonnen verhaal: Pano legt chaos bloot bij OCMW van Anderlecht (19 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/18/pano-ocmw-brussel-leefloon-zonder-recht/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
