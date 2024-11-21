@@ -76,5 +76,7 @@
 
 [Duizenden euro's leefloon met verzonnen verhaal: Pano legt chaos bloot bij OCMW van Anderlecht (19 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/18/pano-ocmw-brussel-leefloon-zonder-recht/)
 
+[Kamerleden snoeihard voor minister Lalieux na Pano over OCMW Anderlecht: "Dit is een schandaal en u reageert alsof het niks is" (21 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/21/kamerleden-snoeihard-voor-minister-lalieux-na-pano-over-ocmw-and/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
