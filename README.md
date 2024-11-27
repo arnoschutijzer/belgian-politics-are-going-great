@@ -80,5 +80,7 @@
 
 [Burgemeester Heuvelland heeft belangenconflicten en schendt beroepsgeheim, blijkt uit rapport van Audit Vlaanderen (26 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/25/audit-vlaanderen-burgemeester-heuvelland-zit-in-belangenconflic/)
 
+["Ik kan niet langer zwijgen": bestuurder OCMW Anderlecht doet boekje open over jarenlange vermoedens van fraude (27 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/27/ocmw-anderlecht-commissie-lalieux/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
