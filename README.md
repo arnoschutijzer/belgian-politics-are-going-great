@@ -82,5 +82,7 @@
 
 ["Ik kan niet langer zwijgen": bestuurder OCMW Anderlecht doet boekje open over jarenlange vermoedens van fraude (27 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/27/ocmw-anderlecht-commissie-lalieux/)
 
+[OCMW-voorzitter in Anderlecht die in opspraak is gekomen na Pano-reportage wordt schepen van Huisvesting (2 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/01/anderlecht-installatie-schepencollege-ophef-pano/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
