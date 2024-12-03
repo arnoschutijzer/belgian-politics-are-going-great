@@ -84,5 +84,7 @@
 
 [OCMW-voorzitter in Anderlecht die in opspraak is gekomen na Pano-reportage wordt schepen van Huisvesting (1 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/01/anderlecht-installatie-schepencollege-ophef-pano/)
 
+[Onderzoek naar mogelijke witwaspraktijken door Didier Reynders (3 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/onderzoek-naar-mogelijke-witwaspraktijken-door-didier-reynders/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
