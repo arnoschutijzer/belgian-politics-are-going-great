@@ -87,5 +87,7 @@
 [Onderzoek naar mogelijke witwaspraktijken door Didier Reynders (3 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/onderzoek-naar-mogelijke-witwaspraktijken-door-didier-reynders/)
 
 [Witwaspraktijken of niet? Ivan De Vadder: "Gerechtelijk onderzoek naar Didier Reynders doet de politiek opnieuw geen goed" (4 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/04/onderzoek-didier-reynders/)
+
+["U bouwde of verbouwde in Heuvelland": burgemeester stuurde persoonlijke brief om stem te vragen aan wie bouwvergunning kreeg (5 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/raad-voor-verkiezingsbetwistingen-hoort-politici-voorzitters-en/)
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
