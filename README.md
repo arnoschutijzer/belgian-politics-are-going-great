@@ -89,5 +89,7 @@
 [Witwaspraktijken of niet? Ivan De Vadder: "Gerechtelijk onderzoek naar Didier Reynders doet de politiek opnieuw geen goed" (4 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/04/onderzoek-didier-reynders/)
 
 ["U bouwde of verbouwde in Heuvelland": burgemeester stuurde persoonlijke brief om stem te vragen aan wie bouwvergunning kreeg (5 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/raad-voor-verkiezingsbetwistingen-hoort-politici-voorzitters-en/)
+
+[Geschorste notaris legt eed af als gemeenteraadslid in Brugge (17 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/17/geschorste-notaris-legt-eed-af-als-gemeenteraadslid-in-brugge/)
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
