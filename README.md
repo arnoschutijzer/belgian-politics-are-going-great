@@ -91,5 +91,8 @@
 ["U bouwde of verbouwde in Heuvelland": burgemeester stuurde persoonlijke brief om stem te vragen aan wie bouwvergunning kreeg (5 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/raad-voor-verkiezingsbetwistingen-hoort-politici-voorzitters-en/)
 
 [Geschorste notaris legt eed af als gemeenteraadslid in Brugge (17 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/17/geschorste-notaris-legt-eed-af-als-gemeenteraadslid-in-brugge/)
+
+[Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
