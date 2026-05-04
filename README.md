@@ -74,6 +74,8 @@
 
 [Rechter verbiedt Le Soir om artikel te publiceren over kandidaat-burgemeester in Verviers: "Preventieve censuur" (12 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/)
 
+[Parket neemt alle volmachtformulieren in beslag in onderzoek naar verkiezingsfraude in Ninove (14 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/14/verkiezingsfraude-ninove-volmachten/)
+
 [Nachtelijke vergadering over vastgoed en VIP-tickets: uitgelekt onderzoek wijst op belangenvermenging door burgemeester van Oudenburg (23 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/23/oudenburg-burgemeester-vastgoed-anthony-dumarey/)
 
 [Duizenden euro's leefloon met verzonnen verhaal: Pano legt chaos bloot bij OCMW van Anderlecht (19 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/18/pano-ocmw-brussel-leefloon-zonder-recht/)
@@ -117,6 +119,10 @@
 [Burgemeester Ludwig Vandenhove van Sint-Truiden excuseert zich voor "weinig flatterende video" waarop hij wankelt over straat (24 oktober 2025)](https://www.vrt.be/vrtnws/nl/2025/10/24/ludwig-vandenhove-video-dronken-sint-truiden/)
 
 [Ex-toppoliticus Didier Reynders officieel in verdenking gesteld van witwassen (4 november 2025)](https://www.vrt.be/vrtnws/nl/2025/11/04/didier-reynders-verdacht-witwassen/)
+
+[Parket van Brussel start onderzoek naar i-Police, Vlaams Belang wil onderzoekscommissie (27 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/27/parket-van-brussel-start-onderzoek-naar-i-police-vlaams-belang/)
+
+[Annelies Verlinden (CD&V) werkte, voor ze minister werd, als advocaat voor bedrijf achter geflopte i-Police (31 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/31/verlinden-ipolice-advocate/)
 
 [Twee vertrouwelingen van Didier Reynders in verdenking gesteld in witwasonderzoek (16 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/)
 
