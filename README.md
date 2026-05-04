@@ -74,6 +74,8 @@
 
 [Rechter verbiedt Le Soir om artikel te publiceren over kandidaat-burgemeester in Verviers: "Preventieve censuur" (12 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/)
 
+[Nachtelijke vergadering over vastgoed en VIP-tickets: uitgelekt onderzoek wijst op belangenvermenging door burgemeester van Oudenburg (23 oktober 2024)](https://www.vrt.be/vrtnws/nl/2024/10/23/oudenburg-burgemeester-vastgoed-anthony-dumarey/)
+
 [Duizenden euro's leefloon met verzonnen verhaal: Pano legt chaos bloot bij OCMW van Anderlecht (19 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/18/pano-ocmw-brussel-leefloon-zonder-recht/)
 
 [Kamerleden snoeihard voor minister Lalieux na Pano over OCMW Anderlecht: "Dit is een schandaal en u reageert alsof het niks is" (21 november 2024)](https://www.vrt.be/vrtnws/nl/2024/11/21/kamerleden-snoeihard-voor-minister-lalieux-na-pano-over-ocmw-and/)
@@ -91,6 +93,32 @@
 ["U bouwde of verbouwde in Heuvelland": burgemeester stuurde persoonlijke brief om stem te vragen aan wie bouwvergunning kreeg (5 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/03/raad-voor-verkiezingsbetwistingen-hoort-politici-voorzitters-en/)
 
 [Geschorste notaris legt eed af als gemeenteraadslid in Brugge (17 december 2024)](https://www.vrt.be/vrtnws/nl/2024/12/17/geschorste-notaris-legt-eed-af-als-gemeenteraadslid-in-brugge/)
+
+[Kamercommissie Financiën plant hoorzittingen over strijd tegen witwassen na onderzoek naar Didier Reynders (21 januari 2025)](https://www.vrt.be/vrtnws/nl/2025/01/21/onderzoek-didier-reynders-hoorzittingen-strijd-tegen-witwassen/)
+
+[Anthony Dumarey mag geen burgemeester van Oudenburg worden na negatief advies: "Beschikt niet over vereiste kwaliteiten" (13 maart 2025)](https://www.vrt.be/vrtnws/nl/2025/03/13/anthony-dumarey-mag-geen-burgemeester-van-oudenburg-worden-bes/)
+
+[Burgemeester Pieter De Crem laat niet-Belgen 9 keer langer wachten dan Belgen op domiciliëring in Aalter (19 maart 2025)](https://www.vrt.be/vrtnws/nl/2025/03/19/aalter-de-crem-domiciliering-niet-belgen-pano-de-morgen/)
+
+[Na Pano: Unia dient een klacht in tegen gemeentebestuur Aalter voor inbreuk op antiracismewet (27 april 2025)](https://www.vrt.be/vrtnws/nl/2025/04/27/aalter-pieter-de-crem-pano-unia-antiracismewet-myria/)
+
+[6 van de 8 verdachten van mogelijke verkiezingsfraude in Ninove zijn vrijgelaten, schepenen Sclacmender en Goessens zitten nog vast (20 mei 2025)](https://www.vrt.be/vrtnws/nl/2025/05/20/arrestaties-verkiezingsfraude-ninove/)
+
+["OCMW Anderlecht heeft fraude gepleegd": parlementaire werkgroep wil terugbetaling subsidies, na Pano-reportage (21 mei 2025)](https://www.vrt.be/vrtnws/nl/2025/05/21/ocmw-anderlecht-fraude-federale-subsidies-parlementaire-werkgroe/)
+
+[Wieland De Meyer mag geen burgemeester van Heuvelland blijven: "Benoeming onmogelijk na 4 negatieve adviezen" (10 juni 2025)](https://www.vrt.be/vrtnws/nl/2025/06/10/wieland-de-meyer-mag-geen-burgemeester-van-heuvelland-blijven/)
+
+[Huiszoekingen bij voormalig NMBS-topman Jean-Claude Fontinoy en bij Brusselse antiquair in witwasonderzoek naar Didier Reynders (14 juli 2025)](https://www.vrt.be/vrtnws/nl/2025/07/14/huiszoekingen-bij-antiquair-uit-brussel-in-witwasonderzoek-naar/)
+
+[Audit Vlaanderen bevestigt: inschrijvingsbeleid van Aalterse burgemeester Pieter De Crem was tegen buitenlanders gericht (5 september 2025)](https://www.vrt.be/vrtnws/nl/2025/09/05/audit-vlaanderen-bevestigt-inschrijvingsbeleid-pieter-de-crem-w/)
+
+[Pieter De Crem (CD&V) stapt op als burgemeester van Aalter na heisa over discriminerend inschrijvingsbeleid (7 september 2025)](https://www.vrt.be/vrtnws/nl/2025/09/07/de-crem-trekt-zich-terug/)
+
+[Burgemeester Ludwig Vandenhove van Sint-Truiden excuseert zich voor "weinig flatterende video" waarop hij wankelt over straat (24 oktober 2025)](https://www.vrt.be/vrtnws/nl/2025/10/24/ludwig-vandenhove-video-dronken-sint-truiden/)
+
+[Ex-toppoliticus Didier Reynders officieel in verdenking gesteld van witwassen (4 november 2025)](https://www.vrt.be/vrtnws/nl/2025/11/04/didier-reynders-verdacht-witwassen/)
+
+[Twee vertrouwelingen van Didier Reynders in verdenking gesteld in witwasonderzoek (16 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/)
 
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
 
