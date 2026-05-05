@@ -126,6 +126,8 @@
 
 [Twee vertrouwelingen van Didier Reynders in verdenking gesteld in witwasonderzoek (16 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/)
 
+[Raadkamer Brussel verwijst 5 verdachten in dossier-Samusocial door naar correctionele rechtbank (27 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/27/raadkamer-verwijst-vijf-verdachten-in-dossier-samusocial-door-na/)
+
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
 
 ## not politics
