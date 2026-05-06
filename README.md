@@ -128,7 +128,13 @@
 
 [Raadkamer Brussel verwijst 5 verdachten in dossier-Samusocial door naar correctionele rechtbank (27 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/27/raadkamer-verwijst-vijf-verdachten-in-dossier-samusocial-door-na/)
 
+[Gouverneur Lantmeeters vraagt burgemeester Vandenhove van Sint-Truiden gedrag bij te sturen na het "Zwartzak"-incident (4 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/04/klacht-oppositie-over-gebruik-van-het-woord-zwartzak-moet-doo/)
+
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
+
+[Oppositie Heers stapt naar onderzoeksrechter na Audit Vlaanderen-rapport: "Vertrouwen in burgemeester volledig weg" (27 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/27/oppositie-heers-gaat-klacht-indienen-na-rapport-audit-vlaanderen/)
+
+[ING betaalt 1,6 miljoen euro in witwasonderzoek rond Didier Reynders en ontloopt zo vervolging (5 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/05/ing-onderzoek-reynders/)
 
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
