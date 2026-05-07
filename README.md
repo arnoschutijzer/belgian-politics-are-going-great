@@ -130,7 +130,11 @@
 
 [Gouverneur Lantmeeters vraagt burgemeester Vandenhove van Sint-Truiden gedrag bij te sturen na het "Zwartzak"-incident (4 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/04/klacht-oppositie-over-gebruik-van-het-woord-zwartzak-moet-doo/)
 
+[Oud-burgemeester van Meulebeke Dirk Verwilst is schuldig aan belangenvermenging, maar krijgt geen straf (25 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/25/oud-burgemeester-van-meulebeke-krijgt-opschorting-van-straf-voor/)
+
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
+
+[Parket Brussel opent onderzoek naar aankoop van antidronewapens door Defensie na Pano-reportage (17 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/17/parket-onderzoek-drones-pano/)
 
 [Oppositie Heers stapt naar onderzoeksrechter na Audit Vlaanderen-rapport: "Vertrouwen in burgemeester volledig weg" (27 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/27/oppositie-heers-gaat-klacht-indienen-na-rapport-audit-vlaanderen/)
 
