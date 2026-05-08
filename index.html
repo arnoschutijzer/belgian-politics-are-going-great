@@ -181,6 +181,15 @@
   }
   .tooltip.visible { opacity: 1; }
   .tooltip.pinned { pointer-events: auto; border-color: var(--link); }
+  .tooltip a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: rgba(88, 166, 255, 0.4);
+    text-underline-offset: 2px;
+  }
+  .tooltip a:hover {
+    text-decoration-color: var(--link);
+  }
   .tooltip .close {
     position: absolute;
     top: 4px;
@@ -194,7 +203,7 @@
     padding: 2px 6px;
   }
   .tooltip .close:hover { color: var(--fg); }
-  .cell.pinned { outline: 2px solid var(--link); outline-offset: 1px; }
+  .cell.pinned, .bar.pinned { outline: 2px solid var(--link); outline-offset: 1px; }
   .tooltip .date { color: var(--muted); margin-bottom: 6px; font-weight: 600; }
   .tooltip ul { margin: 0; padding-left: 16px; }
   .tooltip li { margin-bottom: 4px; }
@@ -465,6 +474,10 @@ function parseDate(s) {
   return new Date(Date.UTC(y, m - 1, d));
 }
 
+function formatDateNL(d) {
+  return `${d.getUTCDate()} ${MONTHS_NL[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
 // Monday = 0 ... Sunday = 6
 function dayIndex(d) {
   const js = d.getUTCDay();
@@ -574,42 +587,70 @@ function renderYear(year, byDate) {
 }
 
 const tooltip = document.getElementById("tooltip");
-let pinnedCell = null;
+let pinnedTarget = null;
 
-function tooltipHTML(key, items, { pinned = false } = {}) {
-  const dateObj = parseDate(key);
-  const formatted = `${dateObj.getUTCDate()} ${MONTHS_NL[dateObj.getUTCMonth()]} ${dateObj.getUTCFullYear()}`;
-  const list = items.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a></li>`).join("");
-  const close = pinned ? `<button class="close" type="button" aria-label="Sluiten">&times;</button>` : "";
-  return `${close}<div class="date">${formatted}</div><ul>${list}</ul>`;
+function describeTarget(target) {
+  // Returns { title, items } for the hovered/clicked element.
+  if (target.dataset.date) {
+    const key = target.dataset.date;
+    const dateObj = parseDate(key);
+    const title = `${dateObj.getUTCDate()} ${MONTHS_NL[dateObj.getUTCMonth()]} ${dateObj.getUTCFullYear()}`;
+    const items = (byDate.get(key) || []).map(s => ({ ...s, _date: key }));
+    return { title, items, withDate: false };
+  }
+  if (target.dataset.weekStart) {
+    const startKey = target.dataset.weekStart;
+    const endKey = target.dataset.weekEnd;
+    const start = parseDate(startKey);
+    const end = parseDate(endKey);
+    const compName = target.closest(".component")?.querySelector(".component-name")?.textContent;
+    const items = [];
+    for (let d = new Date(start); d <= end; d.setUTCDate(d.getUTCDate() + 1)) {
+      const dayItems = byDate.get(dateKey(d)) || [];
+      for (const it of dayItems) {
+        if (!compName || classifyIncident(it) === compName) items.push({ ...it, _date: dateKey(d) });
+      }
+    }
+    const title = `${formatDateNL(start)} – ${formatDateNL(end)}`;
+    return { title, items, withDate: true };
+  }
+  return null;
 }
 
-function showTooltip(cell, evt) {
-  if (pinnedCell) return;
-  const key = cell.dataset.date;
-  if (!key) return;
-  const items = byDate.get(key) || [];
-  tooltip.innerHTML = tooltipHTML(key, items);
+function tooltipHTML({ title, items, withDate }, { pinned = false } = {}) {
+  const list = items.map(s => {
+    const sd = parseDate(s._date);
+    const datePrefix = withDate ? `<span style="color: var(--muted)">${sd.getUTCDate()} ${MONTHS_NL[sd.getUTCMonth()]}</span> · ` : "";
+    return `<li>${datePrefix}<a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a></li>`;
+  }).join("");
+  const close = pinned ? `<button class="close" type="button" aria-label="Sluiten">&times;</button>` : "";
+  return `${close}<div class="date">${title}</div><ul>${list}</ul>`;
+}
+
+function showTooltip(target, evt) {
+  if (pinnedTarget) return;
+  const desc = describeTarget(target);
+  if (!desc) return;
+  tooltip.innerHTML = tooltipHTML(desc);
   tooltip.classList.add("visible");
   positionTooltip(evt);
 }
 
-function pinTooltip(cell) {
-  const key = cell.dataset.date;
-  if (!key) return;
-  if (pinnedCell) pinnedCell.classList.remove("pinned");
-  pinnedCell = cell;
-  cell.classList.add("pinned");
-  const items = byDate.get(key) || [];
-  tooltip.innerHTML = tooltipHTML(key, items, { pinned: true });
+function pinTooltip(target) {
+  const desc = describeTarget(target);
+  if (!desc) return;
+  if (pinnedTarget) pinnedTarget.classList.remove("pinned");
+  pinnedTarget = target;
+  target.classList.add("pinned");
+  tooltip.innerHTML = tooltipHTML(desc, { pinned: true });
   tooltip.classList.add("visible", "pinned");
-  const rect = cell.getBoundingClientRect();
+  const rect = target.getBoundingClientRect();
   positionTooltip({ clientX: rect.left + rect.width / 2, clientY: rect.bottom });
 }
 
 function unpinTooltip() {
-  if (pinnedCell) pinnedCell.classList.remove("pinned");
-  pinnedCell = null;
+  if (pinnedTarget) pinnedTarget.classList.remove("pinned");
+  pinnedTarget = null;
   tooltip.classList.remove("pinned");
   hideTooltip();
 }
@@ -626,7 +667,7 @@ function positionTooltip(evt) {
 }
 
 function hideTooltip() {
-  if (pinnedCell) return;
+  if (pinnedTarget) return;
   tooltip.classList.remove("visible");
 }
 
@@ -642,40 +683,42 @@ for (const y of years) {
   yearsContainer.appendChild(renderYear(y, byDate));
 }
 
+const PIN_SELECTOR = ".cell[data-date], .bar[data-week-start]";
+
 document.addEventListener("mouseover", e => {
-  if (pinnedCell) return;
-  const cell = e.target.closest(".cell[data-date]");
-  if (cell) showTooltip(cell, e);
+  if (pinnedTarget) return;
+  const target = e.target.closest(PIN_SELECTOR);
+  if (target) showTooltip(target, e);
 });
 document.addEventListener("mousemove", e => {
-  if (pinnedCell) return;
+  if (pinnedTarget) return;
   if (tooltip.classList.contains("visible")) positionTooltip(e);
 });
 document.addEventListener("mouseout", e => {
-  if (pinnedCell) return;
-  if (e.target.closest(".cell[data-date]")) hideTooltip();
+  if (pinnedTarget) return;
+  if (e.target.closest(PIN_SELECTOR)) hideTooltip();
 });
 document.addEventListener("focusin", e => {
-  if (pinnedCell) return;
-  const cell = e.target.closest(".cell[data-date]");
-  if (cell) {
-    const rect = cell.getBoundingClientRect();
-    showTooltip(cell, { clientX: rect.left + rect.width / 2, clientY: rect.top });
+  if (pinnedTarget) return;
+  const target = e.target.closest(PIN_SELECTOR);
+  if (target) {
+    const rect = target.getBoundingClientRect();
+    showTooltip(target, { clientX: rect.left + rect.width / 2, clientY: rect.top });
   }
 });
 document.addEventListener("focusout", e => {
-  if (pinnedCell) return;
-  if (e.target.closest(".cell[data-date]")) hideTooltip();
+  if (pinnedTarget) return;
+  if (e.target.closest(PIN_SELECTOR)) hideTooltip();
 });
 
 document.addEventListener("click", e => {
-  const cell = e.target.closest(".cell[data-date]");
-  if (cell) {
+  const target = e.target.closest(PIN_SELECTOR);
+  if (target) {
     e.preventDefault();
-    if (pinnedCell === cell) {
+    if (pinnedTarget === target) {
       unpinTooltip();
     } else {
-      pinTooltip(cell);
+      pinTooltip(target);
     }
     return;
   }
@@ -683,13 +726,13 @@ document.addEventListener("click", e => {
     unpinTooltip();
     return;
   }
-  if (pinnedCell && !e.target.closest(".tooltip")) {
+  if (pinnedTarget && !e.target.closest(".tooltip")) {
     unpinTooltip();
   }
 });
 
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape" && pinnedCell) unpinTooltip();
+  if (e.key === "Escape" && pinnedTarget) unpinTooltip();
 });
 
 // ---------- Status page view ----------
@@ -835,42 +878,6 @@ function renderStatusPage() {
 }
 
 renderStatusPage();
-
-function formatDateNL(d) {
-  return `${d.getUTCDate()} ${MONTHS_NL[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
-}
-
-// Tooltip wiring for status bars (reuse the same tooltip)
-function showBarTooltip(bar, evt) {
-  const startKey = bar.dataset.weekStart;
-  const endKey = bar.dataset.weekEnd;
-  if (!startKey || !endKey) return;
-  const compName = bar.closest(".component")?.querySelector(".component-name")?.textContent;
-  const items = [];
-  const start = parseDate(startKey);
-  const end = parseDate(endKey);
-  for (let d = new Date(start); d <= end; d.setUTCDate(d.getUTCDate() + 1)) {
-    const dayItems = byDate.get(dateKey(d)) || [];
-    for (const it of dayItems) {
-      if (!compName || classifyIncident(it) === compName) items.push({ ...it, _date: dateKey(d) });
-    }
-  }
-  const range = `${formatDateNL(start)} – ${formatDateNL(end)}`;
-  const list = items.map(s => {
-    const sd = parseDate(s._date);
-    return `<li><span style="color: var(--muted)">${sd.getUTCDate()} ${MONTHS_NL[sd.getUTCMonth()]}</span> · <a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a></li>`;
-  }).join("");
-  tooltip.innerHTML = `<div class="date">${range}</div><ul>${list}</ul>`;
-  tooltip.classList.add("visible");
-  positionTooltip(evt);
-}
-document.addEventListener("mouseover", e => {
-  const bar = e.target.closest(".bar[data-week-start]");
-  if (bar) showBarTooltip(bar, e);
-});
-document.addEventListener("mouseout", e => {
-  if (e.target.closest(".bar[data-week-start]")) hideTooltip();
-});
 
 // View toggle
 const toggleButtons = document.querySelectorAll(".view-toggle button");
