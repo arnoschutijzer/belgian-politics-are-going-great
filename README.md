@@ -132,13 +132,23 @@
 
 [Oud-burgemeester van Meulebeke Dirk Verwilst is schuldig aan belangenvermenging, maar krijgt geen straf (25 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/25/oud-burgemeester-van-meulebeke-krijgt-opschorting-van-straf-voor/)
 
+[Na klacht van Descheemaecker: gouverneur vernietigt besluit van Middelkerke om job te geven aan vriend van burgemeester Dedecker (3 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/03/gouverneur-vernietigt-beslissing-van-schepencollege-middelkerke/)
+
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
 
 [Parket Brussel opent onderzoek naar aankoop van antidronewapens door Defensie na Pano-reportage (17 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/17/parket-onderzoek-drones-pano/)
 
+[Was reactie van Theo Francken en Defensie na de Pano-reportage over de drones correct? Inspectie Financiën had wél kritiek op aankopen (21 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/21/vertelden-theo-francken-en-defensie-de-waarheid-na-de-pano-repor/)
+
 [Oppositie Heers stapt naar onderzoeksrechter na Audit Vlaanderen-rapport: "Vertrouwen in burgemeester volledig weg" (27 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/27/oppositie-heers-gaat-klacht-indienen-na-rapport-audit-vlaanderen/)
 
+[Hof van Beroep bevestigt deels veroordeling van oud-burgemeester Francesco Vanderjeugd uit Staden (29 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/29/hof-van-beroep-arrest-francesco-vanderjeugd/)
+
 [ING betaalt 1,6 miljoen euro in witwasonderzoek rond Didier Reynders en ontloopt zo vervolging (5 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/05/ing-onderzoek-reynders/)
+
+[Schepen uit Herent moet naar rechtbank door omstreden zomerbar: "Ook politici moeten de wet respecteren" (5 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/05/herent-schepen-zomerbar-rechtbank-bomenkap/)
+
+[Audit Vlaanderen sluit vooronderzoek naar Genkse subsidies voor dansstudio Bounce af, stad wacht nog altijd op terugbetaling (6 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/06/audit-vlaanderen-sluit-vooronderzoek-naar-genkse-subsidies-voor/)
 
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
