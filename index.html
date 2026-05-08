@@ -749,11 +749,12 @@ function classifyIncident(s) {
   return COMPONENTS[0].name;
 }
 
-function severityForCount(count) {
-  if (count <= 0) return { cls: "", level: 0 };
-  if (count <= 2) return { cls: "b1", level: 1 };
-  if (count <= 4) return { cls: "b3", level: 2 };
-  return { cls: "b4", level: 3 };
+function severityClass(count) {
+  if (count <= 0) return "";
+  if (count === 1) return "b1";
+  if (count === 2) return "b2";
+  if (count <= 4) return "b3";
+  return "b4";
 }
 
 function todayUTC() {
@@ -785,13 +786,13 @@ function renderBars(container, weeks, byDate, perComponent) {
       }
     }
 
-    const sev = severityForCount(items.length);
+    const cls = severityClass(items.length);
     if (items.length > 0) {
       totalIncidentWeeks++;
       totalIncidents += items.length;
     }
     const bar = document.createElement("div");
-    bar.className = "bar" + (sev.cls ? " " + sev.cls : "");
+    bar.className = "bar" + (cls ? " " + cls : "");
     const range = `${dateKey(weekStart)} – ${dateKey(weekEnd)}`;
     if (items.length > 0) {
       bar.dataset.weekStart = dateKey(weekStart);
