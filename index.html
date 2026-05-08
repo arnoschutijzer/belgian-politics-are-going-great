@@ -510,7 +510,7 @@ function renderYear(year, byDate) {
 
   const heading = document.createElement("h2");
   const yearCount = SCANDALS.filter(s => s.date.startsWith(String(year))).length;
-  heading.innerHTML = `${year} <span class="count">${yearCount} ${yearCount === 1 ? "schandaal" : "schandalen"}</span>`;
+  heading.innerHTML = `${year} <span class="count">${yearCount} ${yearCount === 1 ? "incident" : "incidenten"}</span>`;
   wrapper.appendChild(heading);
 
   const heatmap = document.createElement("div");
@@ -564,9 +564,9 @@ function renderYear(year, byDate) {
       cell.dataset.count = String(intensityFor(items.length));
       cell.dataset.date = key;
       cell.tabIndex = 0;
-      cell.setAttribute("aria-label", `${key}: ${items.length} ${items.length === 1 ? "schandaal" : "schandalen"}`);
+      cell.setAttribute("aria-label", `${key}: ${items.length} ${items.length === 1 ? "incident" : "incidenten"}`);
     } else {
-      cell.setAttribute("aria-label", `${key}: geen schandalen`);
+      cell.setAttribute("aria-label", `${key}: geen incidenten`);
     }
     grid.appendChild(cell);
   }
