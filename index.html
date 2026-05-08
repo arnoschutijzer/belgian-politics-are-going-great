@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belgian Politics Are Going Great — Heatmap</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --card: #161b22;
+    --empty: #161b22;
+    --l1: #4d0e0e;
+    --l2: #8a1a1a;
+    --l3: #c92a2a;
+    --l4: #ff4d4d;
+    --link: #58a6ff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff;
+      --fg: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --card: #f6f8fa;
+      --empty: #ebedf0;
+      --l1: #ffd6d6;
+      --l2: #ff8a8a;
+      --l3: #e23b3b;
+      --l4: #8a0a0a;
+      --link: #0969da;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+  }
+  header p {
+    margin: 0 0 4px;
+    color: var(--muted);
+  }
+  header a { color: var(--link); }
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .legend .swatches {
+    display: flex;
+    gap: 3px;
+  }
+  .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 24px 0 8px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .stats strong { color: var(--fg); }
+
+  .year {
+    margin-top: 40px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+  }
+  .year h2 {
+    margin: 0 0 4px;
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .year h2 .count {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: normal;
+  }
+
+  .heatmap {
+    display: inline-grid;
+    grid-template-columns: 28px 1fr;
+    grid-template-rows: 18px 1fr;
+    gap: 4px;
+    margin-top: 12px;
+  }
+  .month-row {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12px;
+    gap: 3px;
+    font-size: 10px;
+    color: var(--muted);
+    height: 14px;
+    align-items: end;
+  }
+  .month-row span {
+    grid-row: 1;
+    white-space: nowrap;
+  }
+  .day-labels {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(7, 12px);
+    gap: 3px;
+    font-size: 10px;
+    color: var(--muted);
+    align-items: center;
+    padding-right: 4px;
+  }
+  .day-labels span:nth-child(even) { visibility: visible; }
+  .day-labels span:nth-child(odd) { visibility: hidden; }
+  .grid {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(7, 12px);
+    grid-auto-flow: column;
+    grid-auto-columns: 12px;
+    gap: 3px;
+  }
+  .cell {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: var(--empty);
+    cursor: default;
+  }
+  .cell[data-count="1"] { background: var(--l1); cursor: pointer; }
+  .cell[data-count="2"] { background: var(--l2); cursor: pointer; }
+  .cell[data-count="3"] { background: var(--l3); cursor: pointer; }
+  .cell[data-count="4"] { background: var(--l4); cursor: pointer; }
+  .cell.placeholder { background: transparent; }
+  .cell:focus { outline: 2px solid var(--link); outline-offset: 1px; }
+
+  .tooltip {
+    position: fixed;
+    z-index: 1000;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 12px;
+    max-width: 360px;
+    pointer-events: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.1s ease;
+  }
+  .tooltip.visible { opacity: 1; }
+  .tooltip.pinned { pointer-events: auto; border-color: var(--link); }
+  .tooltip .close {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 2px 6px;
+  }
+  .tooltip .close:hover { color: var(--fg); }
+  .cell.pinned { outline: 2px solid var(--link); outline-offset: 1px; }
+  .tooltip .date { color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+  .tooltip ul { margin: 0; padding-left: 16px; }
+  .tooltip li { margin-bottom: 4px; }
+  .tooltip li:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  footer a { color: var(--link); }
+
+  /* View toggle */
+  .view-toggle {
+    display: inline-flex;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    margin: 24px 0 0;
+  }
+  .view-toggle button {
+    background: transparent;
+    color: var(--muted);
+    border: none;
+    padding: 6px 14px;
+    font: inherit;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .view-toggle button.active {
+    background: var(--bg);
+    color: var(--fg);
+    box-shadow: 0 0 0 1px var(--border);
+  }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* Status page */
+  .components {
+    margin-top: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .components h3 {
+    margin: 0;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .component {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .component:last-child { border-bottom: none; }
+  .component-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .component-name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .bars {
+    display: flex;
+    gap: 2px;
+    height: 28px;
+  }
+  .bar {
+    flex: 1;
+    min-width: 2px;
+    border-radius: 2px;
+    background: #2ea043;
+    cursor: default;
+    transition: opacity 0.1s ease;
+  }
+  .bar:hover { opacity: 0.75; }
+  .bar.b1 { background: #d29922; cursor: pointer; }
+  .bar.b2 { background: #da3633; cursor: pointer; }
+  .bar.b3 { background: #f85149; cursor: pointer; }
+  .bar.b4 { background: #b91c1c; cursor: pointer; }
+  .bar-axis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .uptime {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .uptime strong { color: var(--fg); }
+
+  .recent {
+    margin-top: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .recent h3 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .incident {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .incident:last-child { border-bottom: none; }
+  .incident-date {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .incident a { color: var(--link); text-decoration: none; }
+  .incident a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Belgian Politics Are Going Great</h1>
+    <p>Bron: <a href="https://github.com/arnoschutijzer/belgian-politics-are-going-great">README.md</a></p>
+    <div class="view-toggle" role="tablist">
+      <button type="button" class="active" data-view="status" role="tab">Status page</button>
+      <button type="button" data-view="heatmap" role="tab">Heatmap</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="view-heatmap" class="view">
+      <div class="legend">
+        <span>Minder</span>
+        <div class="swatches">
+          <div class="swatch" style="background: var(--empty)"></div>
+          <div class="swatch" style="background: var(--l1)"></div>
+          <div class="swatch" style="background: var(--l2)"></div>
+          <div class="swatch" style="background: var(--l3)"></div>
+          <div class="swatch" style="background: var(--l4)"></div>
+        </div>
+        <span>Meer</span>
+      </div>
+      <div id="years"></div>
+    </section>
+    <section id="view-status" class="view active">
+      <div class="components">
+        <h3>Componenten — laatste 90 dagen</h3>
+        <div id="components"></div>
+      </div>
+      <div class="recent">
+        <h3>Recente incidenten</h3>
+        <div id="recent-incidents"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Klik of hover op een gekleurde dag voor details. Data eindigt op de meest recente entry in de README.
+  </footer>
+</div>
+
+<div class="tooltip" id="tooltip" role="tooltip"></div>
+
+<script>
+const SCANDALS = [
+  { date: "2021-03-29", title: "Zaak-Sihame El Kaouakibi", url: "https://www.vrt.be/vrtnws/nl/dossiers/2021/02/zaak-sihame-el-kaouakibi/" },
+  { date: "2022-10-20", title: "Politievakbond vraagt onderzoek naar mogelijk machtsmisbruik door burgemeester van Haaltert", url: "https://www.vrt.be/vrtnws/nl/2022/10/20/politievakbond-vraagt-onderzoek-naar-mogelijk-machtsmisbruik-doo/" },
+  { date: "2022-12-09", title: "Qatar EP: 16 huiszoekingen en 4 arrestaties", url: "https://www.vrt.be/vrtnws/nl/2022/12/09/probeerde-qatar-invloed-te-kopen-in-het-europees-parlement-16-h/" },
+  { date: "2023-02-28", title: "Antwerpse gouverneur onderzoekt belangenvermenging burgemeester Boechout", url: "https://www.vrt.be/vrtnws/nl/2023/02/28/gouverneur-bekijkt-wat-verdere-gevolgen-zijn-van-audit-over-moge/" },
+  { date: "2023-03-01", title: "Bracke en De Croo: onwettige pensioenextra's", url: "https://www.vrt.be/vrtnws/nl/2023/03/01/bureau-van-de-kamer-stuit-op-onwettige-pensioenextra-s/" },
+  { date: "2023-03-01", title: "ACV-voorzitter Marc Leemans laat zich ontslaan voor werkloosheidsuitkering", url: "https://www.vrt.be/vrtnws/nl/2023/03/01/kritiek-op-brugpensioenregeling-acv-voorzitter-marc-leemans/" },
+  { date: "2023-03-02", title: "Ambtenaren en oud-Kamervoorzitters: vergoeding bovenop pensioen", url: "https://www.vrt.be/vrtnws/nl/2023/03/02/pensioenextra-s-wat-weten-we-al/" },
+  { date: "2023-03-07", title: "Burgemeester Herent over vermeende subsidiefraude", url: "https://www.vrt.be/vrtnws/nl/2023/03/07/burgemeester-herent-over-vermeende-subsidiefraude-oppositie-he/" },
+  { date: "2023-03-07", title: "\"Spookleden\" verdeelt Open VLD-afdeling Brussel-Stad", url: "https://www.vrt.be/vrtnws/nl/2023/03/07/spookleden-verdeelt-open-vld-afdeling-brussel-stad/" },
+  { date: "2023-04-12", title: "Charles Michel onder vuur voor \"buitensporige reisonkosten\"", url: "https://www.vrt.be/vrtnws/nl/2023/04/12/charles-michel-onder-vuur/" },
+  { date: "2023-04-19", title: "Pensioensaga: Vlaams Parlement omzeilt pensioenplafond", url: "https://www.vrt.be/vrtnws/nl/2023/04/19/jos-d-haese-onthulling-vlaams-parlement-pensioenen/" },
+  { date: "2023-04-19", title: "Ivan De Vadder over de pensioenperikelen", url: "https://www.vrt.be/vrtnws/nl/2023/04/19/analyse-pensioensaga-vlaams-parlement/" },
+  { date: "2023-04-20", title: "Sarah Schlitz onder vuur voor persoonlijk logo", url: "https://www.vrt.be/vrtnws/nl/2023/04/20/loog-staatssecretaris-schlitz-in-het-parlement-onder-vuur-voor/" },
+  { date: "2023-04-21", title: "PVDA: alle partijen stemden in met omzeiling pensioenplafond", url: "https://www.vrt.be/vrtnws/nl/2023/04/21/pvda-pensioen-document/" },
+  { date: "2023-04-22", title: "Vlaams Parlement keurde omstreden pensioenregeling goed", url: "https://www.vrt.be/vrtnws/nl/2023/04/22/ook-in-vlaams-parlement-werd-omstreden-pensioenregeling-goedgeke/" },
+  { date: "2023-05-03", title: "Twee kabinetsmedewerkers De Sutter op loonlijst Bpost", url: "https://www.vrt.be/vrtnws/nl/2023/05/03/twee-kabinetsmedewerkers-van-minister-de-sutter-staan-op-loonlij/" },
+  { date: "2023-05-09", title: "Consultants verdienden miljoenen aan Bpost zonder aanbesteding", url: "https://www.vrt.be/vrtnws/nl/2023/05/09/consultants-konden-miljoenen-verdienen-aan-bpost-zonder-openbare/" },
+  { date: "2023-05-10", title: "Marc Tarabella in tranen na vrijlating in Qatargate", url: "https://www.vrt.be/vrtnws/nl/2023/05/10/qatargate-marc-tarabella-in-tranen/" },
+  { date: "2023-05-13", title: "Kabinet Jambon: medewerker betaald door Bpost", url: "https://www.vrt.be/vrtnws/nl/2023/05/12/jambon-bpost/" },
+  { date: "2023-05-15", title: "Adviseur Lydia Peeters biedt ook rijopleidingen aan", url: "https://www.vrt.be/vrtnws/nl/2023/05/15/adviseur-van-minister-van-mobiliteit-lydia-peeters-biedt-ook-rij/" },
+  { date: "2023-07-13", title: "Jambon bracht facturatie havenmedewerker in orde na Bpost-schandaal", url: "https://www.vrt.be/vrtnws/nl/2023/07/13/jambon-havenmedewerker-commissie-algemeen-beleid/" },
+  { date: "2023-07-18", title: "Bpost: honderden miljoenen subsidies te veel gekregen", url: "https://www.vrt.be/vrtnws/nl/2023/07/17/bpost-nota-boek/" },
+  { date: "2023-08-03", title: "Oud-ambtenaren Kamer krijgen gelijk in kortgeding", url: "https://www.vrt.be/vrtnws/nl/2023/08/03/pensioenextra-s-kortgeding/" },
+  { date: "2023-08-04", title: "Bracke dient verzoekschrift in bij Raad van State", url: "https://www.vrt.be/vrtnws/nl/2023/08/04/siegfried-bracke-verzoekschrift-pensioen-raad-van-state/" },
+  { date: "2023-08-29", title: "Burgemeester Haaltert: herverdeling bevoegdheden", url: "https://www.vrt.be/vrtnws/nl/2023/08/28/herverdeling-bevoegdheden-burgemeester-veerle-baeyens-haaltert/" },
+  { date: "2023-09-04", title: "Beelden incident combi bij Van Quickenborne", url: "https://www.vrt.be/vrtnws/nl/2023/09/04/beelden-incident-combi-bij-van-quickenborne/" },
+  { date: "2023-09-04", title: "Veerle Heeren stapt uit politiek", url: "https://www.vrt.be/vrtnws/nl/2023/09/04/veerle-heeren-stopt-met-politiek/" },
+  { date: "2023-09-22", title: "Audit Vlaanderen: onregelmatigheden in Knokke-Heist", url: "https://www.vrt.be/vrtnws/nl/2023/09/21/audit-vlaanderen-ziet-mogelijke-belangenvermenging-in-knokke-hei/" },
+  { date: "2023-09-29", title: "Publicatieverbod VTM/HLN na verzoek Conner Rousseau", url: "https://www.vrt.be/vrtnws/nl/2023/09/29/conner-rousseau-publicatie-hln-en-vtm-nieuws/" },
+  { date: "2023-11-29", title: "Pano Knokke: bewoners voelen zich bedreigd door Paul Gheysens", url: "https://www.vrt.be/vrtnws/nl/2023/11/28/pano-knokke/" },
+  { date: "2024-01-05", title: "Burgemeester Wielsbeke betaalt al 27 jaar geen leegstandstaks", url: "https://www.vrt.be/vrtnws/nl/2024/01/05/burgemeester-van-wielsbeke-betaalt-al-27-jaar-geen-leegstandsbel/" },
+  { date: "2024-02-24", title: "Nieuwe klacht tegen burgemeester Haaltert", url: "https://www.vrt.be/vrtnws/nl/2024/02/14/opnieuw-klacht-tegen-burgemeester-haaltert-wegens-vergunning-aan/" },
+  { date: "2024-08-16", title: "Schepen Kurt Claeys (Oostende) prees dubieuze investeringen aan", url: "https://www.vrt.be/vrtnws/nl/2024/08/14/schepen-oostende-beleggingen-investeringen/" },
+  { date: "2024-08-16", title: "Kurt Claeys neemt onmiddellijk ontslag", url: "https://www.vrt.be/vrtnws/nl/2024/08/16/kurt-claeys-komt-niet-op/" },
+  { date: "2024-08-16", title: "Sander Loones (N-VA) moet serre afbreken", url: "https://www.vrt.be/vrtnws/nl/2024/08/16/nv-a-kopstuk-sander-loones-uit-koksijde-moet-van-natuur-en-bos-s/" },
+  { date: "2024-10-02", title: "Fusie Beveren, Kruibeke en Zwijndrecht blijft moeilijk", url: "https://vrtnws.be/p.YaxeW9Ox8L4" },
+  { date: "2024-10-12", title: "Rechter verbiedt Le Soir artikel over Verviers", url: "https://www.vrt.be/vrtnws/nl/2024/10/12/le-soir-eenzijdig-verzoek-verkiezingen-verviers/" },
+  { date: "2024-10-14", title: "Parket neemt volmachtformulieren in beslag (Ninove)", url: "https://www.vrt.be/vrtnws/nl/2024/10/14/verkiezingsfraude-ninove-volmachten/" },
+  { date: "2024-10-23", title: "Belangenvermenging burgemeester Oudenburg", url: "https://www.vrt.be/vrtnws/nl/2024/10/23/oudenburg-burgemeester-vastgoed-anthony-dumarey/" },
+  { date: "2024-11-19", title: "Pano: chaos bij OCMW Anderlecht", url: "https://www.vrt.be/vrtnws/nl/2024/11/18/pano-ocmw-brussel-leefloon-zonder-recht/" },
+  { date: "2024-11-21", title: "Kamerleden snoeihard voor minister Lalieux", url: "https://www.vrt.be/vrtnws/nl/2024/11/21/kamerleden-snoeihard-voor-minister-lalieux-na-pano-over-ocmw-and/" },
+  { date: "2024-11-26", title: "Burgemeester Heuvelland: belangenconflicten en schending beroepsgeheim", url: "https://www.vrt.be/vrtnws/nl/2024/11/25/audit-vlaanderen-burgemeester-heuvelland-zit-in-belangenconflic/" },
+  { date: "2024-11-27", title: "Bestuurder OCMW Anderlecht doet boekje open", url: "https://www.vrt.be/vrtnws/nl/2024/11/27/ocmw-anderlecht-commissie-lalieux/" },
+  { date: "2024-12-01", title: "OCMW-voorzitter Anderlecht wordt schepen van Huisvesting", url: "https://www.vrt.be/vrtnws/nl/2024/12/01/anderlecht-installatie-schepencollege-ophef-pano/" },
+  { date: "2024-12-03", title: "Onderzoek naar witwaspraktijken door Didier Reynders", url: "https://www.vrt.be/vrtnws/nl/2024/12/03/onderzoek-naar-mogelijke-witwaspraktijken-door-didier-reynders/" },
+  { date: "2024-12-04", title: "Ivan De Vadder over onderzoek Reynders", url: "https://www.vrt.be/vrtnws/nl/2024/12/04/onderzoek-didier-reynders/" },
+  { date: "2024-12-05", title: "Burgemeester Heuvelland: persoonlijke brief aan bouwers", url: "https://www.vrt.be/vrtnws/nl/2024/12/03/raad-voor-verkiezingsbetwistingen-hoort-politici-voorzitters-en/" },
+  { date: "2024-12-17", title: "Geschorste notaris legt eed af als gemeenteraadslid in Brugge", url: "https://www.vrt.be/vrtnws/nl/2024/12/17/geschorste-notaris-legt-eed-af-als-gemeenteraadslid-in-brugge/" },
+  { date: "2025-01-21", title: "Kamercommissie Financiën plant hoorzittingen na onderzoek Reynders", url: "https://www.vrt.be/vrtnws/nl/2025/01/21/onderzoek-didier-reynders-hoorzittingen-strijd-tegen-witwassen/" },
+  { date: "2025-03-13", title: "Anthony Dumarey mag geen burgemeester van Oudenburg worden", url: "https://www.vrt.be/vrtnws/nl/2025/03/13/anthony-dumarey-mag-geen-burgemeester-van-oudenburg-worden-bes/" },
+  { date: "2025-03-19", title: "Pieter De Crem: niet-Belgen wachten 9 keer langer in Aalter", url: "https://www.vrt.be/vrtnws/nl/2025/03/19/aalter-de-crem-domiciliering-niet-belgen-pano-de-morgen/" },
+  { date: "2025-04-27", title: "Unia dient klacht in tegen Aalter na Pano", url: "https://www.vrt.be/vrtnws/nl/2025/04/27/aalter-pieter-de-crem-pano-unia-antiracismewet-myria/" },
+  { date: "2025-05-20", title: "Verkiezingsfraude Ninove: 6 van 8 verdachten vrijgelaten", url: "https://www.vrt.be/vrtnws/nl/2025/05/20/arrestaties-verkiezingsfraude-ninove/" },
+  { date: "2025-05-21", title: "Parlementaire werkgroep: OCMW Anderlecht pleegde fraude", url: "https://www.vrt.be/vrtnws/nl/2025/05/21/ocmw-anderlecht-fraude-federale-subsidies-parlementaire-werkgroe/" },
+  { date: "2025-06-10", title: "Wieland De Meyer mag geen burgemeester Heuvelland blijven", url: "https://www.vrt.be/vrtnws/nl/2025/06/10/wieland-de-meyer-mag-geen-burgemeester-van-heuvelland-blijven/" },
+  { date: "2025-07-14", title: "Huiszoekingen in witwasonderzoek Reynders", url: "https://www.vrt.be/vrtnws/nl/2025/07/14/huiszoekingen-bij-antiquair-uit-brussel-in-witwasonderzoek-naar/" },
+  { date: "2025-09-05", title: "Audit Vlaanderen bevestigt: De Crem-beleid tegen buitenlanders", url: "https://www.vrt.be/vrtnws/nl/2025/09/05/audit-vlaanderen-bevestigt-inschrijvingsbeleid-pieter-de-crem-w/" },
+  { date: "2025-09-07", title: "Pieter De Crem stapt op als burgemeester van Aalter", url: "https://www.vrt.be/vrtnws/nl/2025/09/07/de-crem-trekt-zich-terug/" },
+  { date: "2025-10-24", title: "Burgemeester Vandenhove (Sint-Truiden) verontschuldigt zich voor wankelvideo", url: "https://www.vrt.be/vrtnws/nl/2025/10/24/ludwig-vandenhove-video-dronken-sint-truiden/" },
+  { date: "2025-11-04", title: "Didier Reynders officieel in verdenking gesteld van witwassen", url: "https://www.vrt.be/vrtnws/nl/2025/11/04/didier-reynders-verdacht-witwassen/" },
+  { date: "2026-01-27", title: "Parket Brussel start onderzoek naar i-Police", url: "https://www.vrt.be/vrtnws/nl/2026/01/27/parket-van-brussel-start-onderzoek-naar-i-police-vlaams-belang/" },
+  { date: "2026-01-31", title: "Annelies Verlinden werkte als advocaat voor i-Police bedrijf", url: "https://www.vrt.be/vrtnws/nl/2026/01/31/verlinden-ipolice-advocate/" },
+  { date: "2026-02-16", title: "Twee vertrouwelingen Reynders in verdenking gesteld", url: "https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/" },
+  { date: "2026-02-27", title: "Raadkamer verwijst 5 verdachten Samusocial door", url: "https://www.vrt.be/vrtnws/nl/2026/02/27/raadkamer-verwijst-vijf-verdachten-in-dossier-samusocial-door-na/" },
+  { date: "2026-03-04", title: "Gouverneur vraagt Vandenhove gedrag bij te sturen", url: "https://www.vrt.be/vrtnws/nl/2026/03/04/klacht-oppositie-over-gebruik-van-het-woord-zwartzak-moet-doo/" },
+  { date: "2026-03-25", title: "Oud-burgemeester Meulebeke schuldig aan belangenvermenging", url: "https://www.vrt.be/vrtnws/nl/2026/03/25/oud-burgemeester-van-meulebeke-krijgt-opschorting-van-straf-voor/" },
+  { date: "2026-04-03", title: "Gouverneur vernietigt besluit Middelkerke (Dedecker)", url: "https://www.vrt.be/vrtnws/nl/2026/04/03/gouverneur-vernietigt-beslissing-van-schepencollege-middelkerke/" },
+  { date: "2026-04-14", title: "Pano: Defensie geeft 50 miljoen uit ondanks negatief advies", url: "https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/" },
+  { date: "2026-04-17", title: "Parket Brussel opent onderzoek naar antidronewapens", url: "https://www.vrt.be/vrtnws/nl/2026/04/17/parket-onderzoek-drones-pano/" },
+  { date: "2026-04-21", title: "Inspectie Financiën had wel kritiek op drone-aankopen", url: "https://www.vrt.be/vrtnws/nl/2026/04/21/vertelden-theo-francken-en-defensie-de-waarheid-na-de-pano-repor/" },
+  { date: "2026-04-27", title: "Oppositie Heers stapt naar onderzoeksrechter", url: "https://www.vrt.be/vrtnws/nl/2026/04/27/oppositie-heers-gaat-klacht-indienen-na-rapport-audit-vlaanderen/" },
+  { date: "2026-04-29", title: "Hof van Beroep bevestigt deels veroordeling Vanderjeugd", url: "https://www.vrt.be/vrtnws/nl/2026/04/29/hof-van-beroep-arrest-francesco-vanderjeugd/" },
+  { date: "2026-05-05", title: "ING betaalt 1,6 miljoen in witwasonderzoek Reynders", url: "https://www.vrt.be/vrtnws/nl/2026/05/05/ing-onderzoek-reynders/" },
+  { date: "2026-05-05", title: "Schepen Herent moet naar rechtbank door zomerbar", url: "https://www.vrt.be/vrtnws/nl/2026/05/05/herent-schepen-zomerbar-rechtbank-bomenkap/" },
+  { date: "2026-05-06", title: "Audit Vlaanderen sluit vooronderzoek Genkse subsidies Bounce af", url: "https://www.vrt.be/vrtnws/nl/2026/05/06/audit-vlaanderen-sluit-vooronderzoek-naar-genkse-subsidies-voor/" },
+];
+
+const MONTHS_NL = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+const DAY_LABELS = ["Ma", "Di", "Wo", "Do", "Vr", "Za", "Zo"];
+
+function dateKey(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+function parseDate(s) {
+  const [y, m, d] = s.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d));
+}
+
+// Monday = 0 ... Sunday = 6
+function dayIndex(d) {
+  const js = d.getUTCDay();
+  return (js + 6) % 7;
+}
+
+function buildIndex() {
+  const byDate = new Map();
+  for (const s of SCANDALS) {
+    if (!byDate.has(s.date)) byDate.set(s.date, []);
+    byDate.get(s.date).push(s);
+  }
+  return byDate;
+}
+
+function intensityFor(count) {
+  if (count <= 0) return 0;
+  if (count === 1) return 1;
+  if (count === 2) return 2;
+  if (count === 3) return 3;
+  return 4;
+}
+
+function renderYear(year, byDate) {
+  const yearStart = new Date(Date.UTC(year, 0, 1));
+  const yearEnd = new Date(Date.UTC(year, 11, 31));
+
+  // Pad to first Monday on or before Jan 1.
+  const firstCell = new Date(yearStart);
+  firstCell.setUTCDate(firstCell.getUTCDate() - dayIndex(yearStart));
+
+  // Pad to last Sunday on or after Dec 31.
+  const lastCell = new Date(yearEnd);
+  lastCell.setUTCDate(lastCell.getUTCDate() + (6 - dayIndex(yearEnd)));
+
+  const totalDays = Math.round((lastCell - firstCell) / 86400000) + 1;
+  const totalWeeks = totalDays / 7;
+
+  const wrapper = document.createElement("section");
+  wrapper.className = "year";
+
+  const heading = document.createElement("h2");
+  const yearCount = SCANDALS.filter(s => s.date.startsWith(String(year))).length;
+  heading.innerHTML = `${year} <span class="count">${yearCount} ${yearCount === 1 ? "schandaal" : "schandalen"}</span>`;
+  wrapper.appendChild(heading);
+
+  const heatmap = document.createElement("div");
+  heatmap.className = "heatmap";
+
+  // Month row: position labels at the column where each month starts within the year.
+  const monthRow = document.createElement("div");
+  monthRow.className = "month-row";
+  monthRow.style.gridTemplateColumns = `repeat(${totalWeeks}, 12px)`;
+
+  let lastMonthShown = -1;
+  for (let w = 0; w < totalWeeks; w++) {
+    const cellDate = new Date(firstCell);
+    cellDate.setUTCDate(cellDate.getUTCDate() + w * 7);
+    const monthOfWeekStart = cellDate.getUTCFullYear() === year ? cellDate.getUTCMonth() : -1;
+    const span = document.createElement("span");
+    span.style.gridColumn = `${w + 1}`;
+    if (monthOfWeekStart !== -1 && monthOfWeekStart !== lastMonthShown && cellDate.getUTCDate() <= 7) {
+      span.textContent = MONTHS_NL[monthOfWeekStart];
+      lastMonthShown = monthOfWeekStart;
+    }
+    monthRow.appendChild(span);
+  }
+  heatmap.appendChild(monthRow);
+
+  const dayLabels = document.createElement("div");
+  dayLabels.className = "day-labels";
+  for (const d of DAY_LABELS) {
+    const s = document.createElement("span");
+    s.textContent = d;
+    dayLabels.appendChild(s);
+  }
+  heatmap.appendChild(dayLabels);
+
+  const grid = document.createElement("div");
+  grid.className = "grid";
+
+  for (let i = 0; i < totalDays; i++) {
+    const d = new Date(firstCell);
+    d.setUTCDate(d.getUTCDate() + i);
+    const cell = document.createElement("div");
+    cell.className = "cell";
+    if (d.getUTCFullYear() !== year) {
+      cell.classList.add("placeholder");
+      grid.appendChild(cell);
+      continue;
+    }
+    const key = dateKey(d);
+    const items = byDate.get(key) || [];
+    if (items.length > 0) {
+      cell.dataset.count = String(intensityFor(items.length));
+      cell.dataset.date = key;
+      cell.tabIndex = 0;
+      cell.setAttribute("aria-label", `${key}: ${items.length} ${items.length === 1 ? "schandaal" : "schandalen"}`);
+    } else {
+      cell.setAttribute("aria-label", `${key}: geen schandalen`);
+    }
+    grid.appendChild(cell);
+  }
+  heatmap.appendChild(grid);
+  wrapper.appendChild(heatmap);
+  return wrapper;
+}
+
+const tooltip = document.getElementById("tooltip");
+let pinnedCell = null;
+
+function tooltipHTML(key, items, { pinned = false } = {}) {
+  const dateObj = parseDate(key);
+  const formatted = `${dateObj.getUTCDate()} ${MONTHS_NL[dateObj.getUTCMonth()]} ${dateObj.getUTCFullYear()}`;
+  const list = items.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a></li>`).join("");
+  const close = pinned ? `<button class="close" type="button" aria-label="Sluiten">&times;</button>` : "";
+  return `${close}<div class="date">${formatted}</div><ul>${list}</ul>`;
+}
+
+function showTooltip(cell, evt) {
+  if (pinnedCell) return;
+  const key = cell.dataset.date;
+  if (!key) return;
+  const items = byDate.get(key) || [];
+  tooltip.innerHTML = tooltipHTML(key, items);
+  tooltip.classList.add("visible");
+  positionTooltip(evt);
+}
+
+function pinTooltip(cell) {
+  const key = cell.dataset.date;
+  if (!key) return;
+  if (pinnedCell) pinnedCell.classList.remove("pinned");
+  pinnedCell = cell;
+  cell.classList.add("pinned");
+  const items = byDate.get(key) || [];
+  tooltip.innerHTML = tooltipHTML(key, items, { pinned: true });
+  tooltip.classList.add("visible", "pinned");
+  const rect = cell.getBoundingClientRect();
+  positionTooltip({ clientX: rect.left + rect.width / 2, clientY: rect.bottom });
+}
+
+function unpinTooltip() {
+  if (pinnedCell) pinnedCell.classList.remove("pinned");
+  pinnedCell = null;
+  tooltip.classList.remove("pinned");
+  hideTooltip();
+}
+
+function positionTooltip(evt) {
+  const pad = 12;
+  const rect = tooltip.getBoundingClientRect();
+  let x = evt.clientX + pad;
+  let y = evt.clientY + pad;
+  if (x + rect.width > window.innerWidth - 8) x = evt.clientX - rect.width - pad;
+  if (y + rect.height > window.innerHeight - 8) y = evt.clientY - rect.height - pad;
+  tooltip.style.left = `${Math.max(8, x)}px`;
+  tooltip.style.top = `${Math.max(8, y)}px`;
+}
+
+function hideTooltip() {
+  if (pinnedCell) return;
+  tooltip.classList.remove("visible");
+}
+
+function escapeHTML(s) {
+  return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+}
+
+const byDate = buildIndex();
+
+const years = Array.from(new Set(SCANDALS.map(s => Number(s.date.slice(0, 4))))).sort((a, b) => b - a);
+const yearsContainer = document.getElementById("years");
+for (const y of years) {
+  yearsContainer.appendChild(renderYear(y, byDate));
+}
+
+document.addEventListener("mouseover", e => {
+  if (pinnedCell) return;
+  const cell = e.target.closest(".cell[data-date]");
+  if (cell) showTooltip(cell, e);
+});
+document.addEventListener("mousemove", e => {
+  if (pinnedCell) return;
+  if (tooltip.classList.contains("visible")) positionTooltip(e);
+});
+document.addEventListener("mouseout", e => {
+  if (pinnedCell) return;
+  if (e.target.closest(".cell[data-date]")) hideTooltip();
+});
+document.addEventListener("focusin", e => {
+  if (pinnedCell) return;
+  const cell = e.target.closest(".cell[data-date]");
+  if (cell) {
+    const rect = cell.getBoundingClientRect();
+    showTooltip(cell, { clientX: rect.left + rect.width / 2, clientY: rect.top });
+  }
+});
+document.addEventListener("focusout", e => {
+  if (pinnedCell) return;
+  if (e.target.closest(".cell[data-date]")) hideTooltip();
+});
+
+document.addEventListener("click", e => {
+  const cell = e.target.closest(".cell[data-date]");
+  if (cell) {
+    e.preventDefault();
+    if (pinnedCell === cell) {
+      unpinTooltip();
+    } else {
+      pinTooltip(cell);
+    }
+    return;
+  }
+  if (e.target.closest(".tooltip .close")) {
+    unpinTooltip();
+    return;
+  }
+  if (pinnedCell && !e.target.closest(".tooltip")) {
+    unpinTooltip();
+  }
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && pinnedCell) unpinTooltip();
+});
+
+// ---------- Status page view ----------
+
+const COMPONENTS = [
+  {
+    name: "Federale regering & Kamer",
+    keywords: ["kamer", "minister", "staatssecretaris", "federaal", "michel", "de sutter", "lalieux", "schlitz", "francken", "verlinden", "van quickenborne", "bracke", "de croo", "pensioen", "bpost", "defensie", "antidrone", "drones", "i-police", "ipolice"],
+  },
+  {
+    name: "Lokale besturen",
+    keywords: ["burgemeester", "schepen", "ocmw", "gemeente", "haaltert", "boechout", "herent", "knokke", "wielsbeke", "oostende", "koksijde", "beveren", "verviers", "ninove", "oudenburg", "anderlecht", "heuvelland", "brugge", "aalter", "sint-truiden", "middelkerke", "heers", "staden", "meulebeke", "genk"],
+  },
+  {
+    name: "Justitie & corruptie",
+    keywords: ["reynders", "witwas", "qatar", "tarabella", "samusocial", "rechtbank", "parket", "hof van beroep", "huiszoeking", "verdenking", "veroordeling", "fraude", "verkiezingsfraude", "ing"],
+  },
+  {
+    name: "Europees Parlement",
+    keywords: ["europ", "qatar", "tarabella", "reynders"],
+  },
+];
+
+function classifyIncident(s) {
+  const haystack = s.title.toLowerCase();
+  for (const comp of COMPONENTS) {
+    if (comp.keywords.some(k => haystack.includes(k))) return comp.name;
+  }
+  return COMPONENTS[0].name;
+}
+
+function severityForCount(count) {
+  if (count <= 0) return { cls: "", level: 0 };
+  if (count <= 2) return { cls: "b1", level: 1 };
+  if (count <= 4) return { cls: "b3", level: 2 };
+  return { cls: "b4", level: 3 };
+}
+
+function todayUTC() {
+  const n = new Date();
+  return new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate()));
+}
+
+function renderBars(container, weeks, byDate, perComponent) {
+  // Each bar covers a 7-day window ending on `today` (most recent bar).
+  const today = todayUTC();
+
+  let totalIncidentWeeks = 0;
+  let totalIncidents = 0;
+
+  for (let w = weeks - 1; w >= 0; w--) {
+    const weekEnd = new Date(today);
+    weekEnd.setUTCDate(weekEnd.getUTCDate() - w * 7);
+    const weekStart = new Date(weekEnd);
+    weekStart.setUTCDate(weekStart.getUTCDate() - 6);
+
+    const items = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(weekStart);
+      d.setUTCDate(d.getUTCDate() + i);
+      const key = dateKey(d);
+      const dayItems = byDate.get(key) || [];
+      for (const it of dayItems) {
+        if (!perComponent || classifyIncident(it) === perComponent) items.push(it);
+      }
+    }
+
+    const sev = severityForCount(items.length);
+    if (items.length > 0) {
+      totalIncidentWeeks++;
+      totalIncidents += items.length;
+    }
+    const bar = document.createElement("div");
+    bar.className = "bar" + (sev.cls ? " " + sev.cls : "");
+    const range = `${dateKey(weekStart)} – ${dateKey(weekEnd)}`;
+    if (items.length > 0) {
+      bar.dataset.weekStart = dateKey(weekStart);
+      bar.dataset.weekEnd = dateKey(weekEnd);
+      bar.tabIndex = 0;
+      bar.setAttribute("aria-label", `${range}: ${items.length} ${items.length === 1 ? "incident" : "incidenten"}`);
+    } else {
+      bar.setAttribute("aria-label", `${range}: geen incidenten`);
+    }
+    container.appendChild(bar);
+  }
+
+  return { totalIncidentWeeks, totalIncidents };
+}
+
+function renderStatusPage() {
+  const weeks = 52;
+
+  document.querySelector(".components h3").textContent = `Componenten — laatste ${weeks} weken`;
+
+  const componentsEl = document.getElementById("components");
+  componentsEl.innerHTML = "";
+  for (const comp of COMPONENTS) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "component";
+
+    const head = document.createElement("div");
+    head.className = "component-head";
+    head.innerHTML = `<span class="component-name">${comp.name}</span>`;
+    wrapper.appendChild(head);
+
+    const bars = document.createElement("div");
+    bars.className = "bars";
+    wrapper.appendChild(bars);
+
+    const axis = document.createElement("div");
+    axis.className = "bar-axis";
+    axis.innerHTML = `<span>${weeks} weken geleden</span><span>deze week</span>`;
+    wrapper.appendChild(axis);
+
+    const uptime = document.createElement("div");
+    uptime.className = "uptime";
+    wrapper.appendChild(uptime);
+
+    componentsEl.appendChild(wrapper);
+
+    const { totalIncidentWeeks, totalIncidents } = renderBars(bars, weeks, byDate, comp.name);
+    const cleanWeeks = weeks - totalIncidentWeeks;
+    const pct = ((cleanWeeks / weeks) * 100).toFixed(1);
+
+    uptime.innerHTML = `<strong>${pct}%</strong> schandaalvrije weken · ${totalIncidents} ${totalIncidents === 1 ? "incident" : "incidenten"} over ${weeks} weken`;
+  }
+
+  // Recent incidents — last 10
+  const recent = [...SCANDALS].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 10);
+  const recentEl = document.getElementById("recent-incidents");
+  recentEl.innerHTML = "";
+  for (const s of recent) {
+    const d = parseDate(s.date);
+    const formatted = `${d.getUTCDate()} ${MONTHS_NL[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+    const incident = document.createElement("div");
+    incident.className = "incident";
+    incident.innerHTML = `
+      <div class="incident-date">${formatted} · ${classifyIncident(s)}</div>
+      <a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a>
+    `;
+    recentEl.appendChild(incident);
+  }
+}
+
+renderStatusPage();
+
+function formatDateNL(d) {
+  return `${d.getUTCDate()} ${MONTHS_NL[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
+// Tooltip wiring for status bars (reuse the same tooltip)
+function showBarTooltip(bar, evt) {
+  const startKey = bar.dataset.weekStart;
+  const endKey = bar.dataset.weekEnd;
+  if (!startKey || !endKey) return;
+  const compName = bar.closest(".component")?.querySelector(".component-name")?.textContent;
+  const items = [];
+  const start = parseDate(startKey);
+  const end = parseDate(endKey);
+  for (let d = new Date(start); d <= end; d.setUTCDate(d.getUTCDate() + 1)) {
+    const dayItems = byDate.get(dateKey(d)) || [];
+    for (const it of dayItems) {
+      if (!compName || classifyIncident(it) === compName) items.push({ ...it, _date: dateKey(d) });
+    }
+  }
+  const range = `${formatDateNL(start)} – ${formatDateNL(end)}`;
+  const list = items.map(s => {
+    const sd = parseDate(s._date);
+    return `<li><span style="color: var(--muted)">${sd.getUTCDate()} ${MONTHS_NL[sd.getUTCMonth()]}</span> · <a href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.title)}</a></li>`;
+  }).join("");
+  tooltip.innerHTML = `<div class="date">${range}</div><ul>${list}</ul>`;
+  tooltip.classList.add("visible");
+  positionTooltip(evt);
+}
+document.addEventListener("mouseover", e => {
+  const bar = e.target.closest(".bar[data-week-start]");
+  if (bar) showBarTooltip(bar, e);
+});
+document.addEventListener("mouseout", e => {
+  if (e.target.closest(".bar[data-week-start]")) hideTooltip();
+});
+
+// View toggle
+const toggleButtons = document.querySelectorAll(".view-toggle button");
+toggleButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    toggleButtons.forEach(b => b.classList.toggle("active", b === btn));
+    const target = btn.dataset.view;
+    document.querySelectorAll(".view").forEach(v => {
+      v.classList.toggle("active", v.id === `view-${target}`);
+    });
+  });
+});
+</script>
+</body>
+</html>
