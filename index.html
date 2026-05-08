@@ -843,7 +843,7 @@ function renderStatusPage() {
     const cleanWeeks = weeks - totalIncidentWeeks;
     const pct = ((cleanWeeks / weeks) * 100).toFixed(1);
 
-    uptime.innerHTML = `<strong>${pct}%</strong> schandaalvrije weken · ${totalIncidents} ${totalIncidents === 1 ? "incident" : "incidenten"} over ${weeks} weken`;
+    uptime.innerHTML = `<strong>${pct}%</strong> incidentvrije weken · ${totalIncidents} ${totalIncidents === 1 ? "incident" : "incidenten"} over ${weeks} weken`;
   }
 
   // Recent incidents — last 10
