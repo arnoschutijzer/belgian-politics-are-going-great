@@ -146,7 +146,6 @@
     border-radius: 2px;
     background: var(--empty);
     cursor: default;
-    touch-action: manipulation;
   }
   .cell[data-count="1"] { background: var(--l1); cursor: pointer; }
   .cell[data-count="2"] { background: var(--l2); cursor: pointer; }
@@ -169,13 +168,10 @@
     opacity: 0;
     transform: translateY(-4px);
     transition: opacity 0.1s ease;
-    touch-action: manipulation;
   }
   .tooltip.visible { opacity: 1; }
   .tooltip.pinned { pointer-events: auto; border-color: var(--link); }
   .tooltip a {
-    display: inline-block;
-    padding: 4px 0;
     color: var(--link);
     text-decoration: underline;
     text-decoration-color: rgba(88, 166, 255, 0.4);
@@ -283,7 +279,6 @@
     background: #2ea043;
     cursor: default;
     transition: opacity 0.1s ease;
-    touch-action: manipulation;
   }
   .bar:hover { opacity: 0.75; }
   .bar.b1 { background: #d29922; cursor: pointer; }
