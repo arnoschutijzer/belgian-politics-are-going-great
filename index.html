@@ -166,11 +166,17 @@
     pointer-events: none;
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     opacity: 0;
-    transform: translateY(-4px);
     transition: opacity 0.1s ease;
   }
   .tooltip.visible { opacity: 1; }
   .tooltip.pinned { pointer-events: auto; border-color: var(--link); }
+  .backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: none;
+  }
+  .backdrop.visible { display: block; }
   .tooltip a {
     color: var(--link);
     text-decoration: underline;
@@ -370,6 +376,7 @@
   </footer>
 </div>
 
+<div class="backdrop" id="backdrop"></div>
 <div class="tooltip" id="tooltip" role="tooltip"></div>
 
 <script>
@@ -577,7 +584,46 @@ function renderYear(year, byDate) {
 }
 
 const tooltip = document.getElementById("tooltip");
+const backdrop = document.getElementById("backdrop");
 let pinnedTarget = null;
+
+function findNearestPinTarget(x, y, maxDist) {
+  let best = null, bestDist = maxDist;
+  for (const el of document.querySelectorAll(PIN_SELECTOR)) {
+    const r = el.getBoundingClientRect();
+    if (r.width === 0 || r.height === 0) continue;
+    const dx = Math.max(0, r.left - x, x - r.right);
+    const dy = Math.max(0, r.top - y, y - r.bottom);
+    const dist = Math.hypot(dx, dy);
+    if (dist < bestDist) {
+      best = el;
+      bestDist = dist;
+    }
+  }
+  return best;
+}
+
+// On mobile, heatmap cells (12px) and status bars (~6px) are smaller than the
+// platform's tap-target threshold. iOS routes the click to the parent container
+// instead of the cell. Intercept touchend, snap to the nearest pin target
+// within a small radius, and suppress the synthesized click that follows.
+let lastTouchHandled = 0;
+
+document.addEventListener("touchend", e => {
+  if (e.changedTouches.length !== 1) return;
+  const t = e.changedTouches[0];
+  const x = t.clientX, y = t.clientY;
+  if (pinnedTarget && pointInRect(x, y, tooltip.getBoundingClientRect())) return;
+  const target = findNearestPinTarget(x, y, 22);
+  if (!target) return;
+  e.preventDefault();
+  lastTouchHandled = Date.now();
+  if (pinnedTarget === target) {
+    unpinTooltip();
+  } else {
+    pinTooltip(target);
+  }
+}, { passive: false });
 
 function describeTarget(target) {
   // Returns { title, items } for the hovered/clicked element.
@@ -634,6 +680,7 @@ function pinTooltip(target) {
   target.classList.add("pinned");
   tooltip.innerHTML = tooltipHTML(desc, { pinned: true });
   tooltip.classList.add("visible", "pinned");
+  backdrop.classList.add("visible");
   const rect = target.getBoundingClientRect();
   positionTooltip({ clientX: rect.left + rect.width / 2, clientY: rect.bottom });
 }
@@ -642,6 +689,7 @@ function unpinTooltip() {
   if (pinnedTarget) pinnedTarget.classList.remove("pinned");
   pinnedTarget = null;
   tooltip.classList.remove("pinned");
+  backdrop.classList.remove("visible");
   hideTooltip();
 }
 
@@ -701,23 +749,58 @@ document.addEventListener("focusout", e => {
   if (e.target.closest(PIN_SELECTOR)) hideTooltip();
 });
 
-document.addEventListener("click", e => {
-  const target = e.target.closest(PIN_SELECTOR);
-  if (target) {
-    e.preventDefault();
-    if (pinnedTarget === target) {
+function pointInRect(x, y, r) {
+  return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+}
+
+// All clicks while pinned go through the backdrop (which sits between the page
+// and the tooltip in z-order). Visual hit-tests against the tooltip's actual
+// bounding rect avoid relying on iOS honoring `pointer-events: auto` for
+// synthesized clicks.
+backdrop.addEventListener("click", e => {
+  const x = e.clientX, y = e.clientY;
+  if (pointInRect(x, y, tooltip.getBoundingClientRect())) {
+    for (const link of tooltip.querySelectorAll("a")) {
+      if (pointInRect(x, y, link.getBoundingClientRect())) {
+        window.open(link.href, "_blank", "noopener");
+        return;
+      }
+    }
+    const closeBtn = tooltip.querySelector(".close");
+    if (closeBtn && pointInRect(x, y, closeBtn.getBoundingClientRect())) {
       unpinTooltip();
-    } else {
-      pinTooltip(target);
     }
     return;
   }
-  if (e.target.closest(".tooltip .close")) {
-    unpinTooltip();
+  const beneath = document.elementsFromPoint(x, y).find(el => el.matches?.(PIN_SELECTOR));
+  if (beneath && beneath !== pinnedTarget) {
+    pinTooltip(beneath);
     return;
   }
-  if (pinnedTarget && !e.target.closest(".tooltip")) {
+  unpinTooltip();
+});
+
+// Desktop / cases where iOS routes correctly: the tooltip catches the click
+// itself, so handle close + stop propagation to the document.
+tooltip.addEventListener("click", e => {
+  e.stopPropagation();
+  if (e.target.closest(".close")) unpinTooltip();
+});
+
+document.addEventListener("click", e => {
+  // The touchend handler already pinned/unpinned for this gesture; suppress
+  // the synthesized click that follows so we don't toggle twice.
+  if (Date.now() - lastTouchHandled < 600) {
+    e.preventDefault();
+    return;
+  }
+  const target = e.target.closest(PIN_SELECTOR);
+  if (!target) return;
+  e.preventDefault();
+  if (pinnedTarget === target) {
     unpinTooltip();
+  } else {
+    pinTooltip(target);
   }
 });
 
