@@ -130,17 +130,11 @@
 
 [Annelies Verlinden (CD&V) werkte, voor ze minister werd, als advocaat voor bedrijf achter geflopte i-Police (31 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/31/verlinden-ipolice-advocate/)
 
-[Heeft Verlinden zich schuldig gemaakt aan belangenvermenging? "Niet in de letterlijke zin" (1 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/01/heeft-verlinden-zich-schuldig-gemaakt-aan-belangenvermenging-n/)
-
 [Twee vertrouwelingen van Didier Reynders in verdenking gesteld in witwasonderzoek (16 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/)
 
 [Raadkamer Brussel verwijst 5 verdachten in dossier-Samusocial door naar correctionele rechtbank (27 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/27/raadkamer-verwijst-vijf-verdachten-in-dossier-samusocial-door-na/)
 
 [Gouverneur Lantmeeters vraagt burgemeester Vandenhove van Sint-Truiden gedrag bij te sturen na het "Zwartzak"-incident (4 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/04/klacht-oppositie-over-gebruik-van-het-woord-zwartzak-moet-doo/)
-
-[Minister Annick De Ridder laat zich negatief testen op cocaïne na rel in Vlaams Parlement (4 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/04/de-ridder-haarstaal-negatief-cocaine/)
-
-[Minister Verlinden verdedigt aanpak i-Police op hoorzitting: "Overtuigd dat ik heb ingegrepen en bijgestuurd" (13 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/13/minister-verlinden-verdedigt-aanpak-i-police-op-hoorzitting/)
 
 [Truiens schepencollege vraagt ontslag CD&V-gemeenteraadslid en ex-schepen Carl Nijssens nu hij naar rechtbank moet voor belangenvermenging (17 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/17/cd-v-gemeenteraadslid-en-ex-schepen-carl-nijssens-uit-sint-truid/)
 
@@ -150,13 +144,9 @@
 
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
 
-[Coalitiegenoten en oppositie eisen uitleg van Francken: "In tijden van onrust moeten ministers tot kalmte oproepen, niet meer onrust veroorzaken" (16 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/16/oppositie-en-cd-v-hard-voor-francken-na-onthullingen-aankoop-dro/)
-
 [Parket Brussel opent onderzoek naar aankoop van antidronewapens door Defensie na Pano-reportage (17 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/17/parket-onderzoek-drones-pano/)
 
 [Was reactie van Theo Francken en Defensie na de Pano-reportage over de drones correct? Inspectie Financiën had wél kritiek op aankopen (21 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/21/vertelden-theo-francken-en-defensie-de-waarheid-na-de-pano-repor/)
-
-[Minister van Defensie Francken ontkent paniekzaaierij over drones en noemt het "pijnlijk" dat hij zelf foute beelden verspreidde (22 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/22/francken-drones-pano/)
 
 [Oppositie Heers stapt naar onderzoeksrechter na Audit Vlaanderen-rapport: "Vertrouwen in burgemeester volledig weg" (27 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/27/oppositie-heers-gaat-klacht-indienen-na-rapport-audit-vlaanderen/)
 
