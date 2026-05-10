@@ -130,6 +130,8 @@
 
 [Gouverneur Lantmeeters vraagt burgemeester Vandenhove van Sint-Truiden gedrag bij te sturen na het "Zwartzak"-incident (4 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/04/klacht-oppositie-over-gebruik-van-het-woord-zwartzak-moet-doo/)
 
+[Truiens schepencollege vraagt ontslag CD&V-gemeenteraadslid en ex-schepen Carl Nijssens nu hij naar rechtbank moet voor belangenvermenging (17 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/17/cd-v-gemeenteraadslid-en-ex-schepen-carl-nijssens-uit-sint-truid/)
+
 [Oud-burgemeester van Meulebeke Dirk Verwilst is schuldig aan belangenvermenging, maar krijgt geen straf (25 maart 2026)](https://www.vrt.be/vrtnws/nl/2026/03/25/oud-burgemeester-van-meulebeke-krijgt-opschorting-van-straf-voor/)
 
 [Na klacht van Descheemaecker: gouverneur vernietigt besluit van Middelkerke om job te geven aan vriend van burgemeester Dedecker (3 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/03/gouverneur-vernietigt-beslissing-van-schepencollege-middelkerke/)
