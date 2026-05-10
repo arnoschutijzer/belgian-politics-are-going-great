@@ -120,7 +120,13 @@
 
 [Ex-toppoliticus Didier Reynders officieel in verdenking gesteld van witwassen (4 november 2025)](https://www.vrt.be/vrtnws/nl/2025/11/04/didier-reynders-verdacht-witwassen/)
 
+[Zuhal Demir onder vuur: deed kabinet aan "vriendjespolitiek" bij toekenning overheidsopdracht? (6 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/06/zuhal-demir-onder-vuur-deed-kabinet-aan-vriendjespolitiek-bij/)
+
+[Stadsbestuur Lommel excuseert zich voor fout van 10 miljoen in begroting, N-VA eist ontslag van financieel directeur en schepen van Financiën (14 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/14/n-va-eist-ontslag-van-financieel-directeur-na-grove-fout-van-1/)
+
 [Parket van Brussel start onderzoek naar i-Police, Vlaams Belang wil onderzoekscommissie (27 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/27/parket-van-brussel-start-onderzoek-naar-i-police-vlaams-belang/)
+
+[Minister van Media Galant (MR) op matje geroepen na "ongepaste en beledigende uitlatingen" over RTBF (30 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/30/mr-minister-van-media-op-matje-geroepen-na-ongepaste-en-beledig/)
 
 [Annelies Verlinden (CD&V) werkte, voor ze minister werd, als advocaat voor bedrijf achter geflopte i-Police (31 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/31/verlinden-ipolice-advocate/)
 
