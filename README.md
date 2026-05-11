@@ -128,5 +128,9 @@
 
 [Defensie geeft versneld 50 miljoen euro uit, ondanks negatief advies: Pano maakt de rekening van het Belgische antidroneplan (14 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/14/counterdroneplan-francken-pano/)
 
+[Minister van Defensie Francken ontkent paniekzaaierij over drones en noemt het "pijnlijk" dat hij zelf foute beelden verspreidde (22 april 2026)](https://www.vrt.be/vrtnws/nl/2026/04/22/francken-drones-pano/)
+
+[ING betaalt 1,6 miljoen euro in witwasonderzoek rond Didier Reynders en ontloopt zo vervolging (5 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/05/ing-onderzoek-reynders/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
