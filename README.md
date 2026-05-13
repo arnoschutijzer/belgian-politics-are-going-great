@@ -160,5 +160,7 @@
 
 [Oudenaardse ex-schepen Mathieu Mas krijgt ook in beroep 6 maanden cel met uitstel voor dodelijk ongeval (8 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/08/mathieu-mas-beroep-oudenaarde-straf/)
 
+[Britse overheid trekt ETA-visum van Filip Dewinter (Vlaams Belang) in, politicus mag niet meer naar Verenigd Koninkrijk reizen (12 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/12/filip-de-winter/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
