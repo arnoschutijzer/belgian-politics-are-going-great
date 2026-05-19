@@ -162,5 +162,7 @@
 
 [Britse overheid trekt ETA-visum van Filip Dewinter (Vlaams Belang) in, politicus mag niet meer naar Verenigd Koninkrijk reizen (12 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/12/filip-de-winter/)
 
+[Auditdienst wil geen onderzoek uitvoeren naar spoedaankoop antidronewapens door Defensie (18 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/18/auditdienst-drones-aankoop-francken/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
