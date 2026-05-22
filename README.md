@@ -168,5 +168,9 @@
 
 [Ook voorzitter van toezichthouder BGHM Safouane Akremi beïnvloedde toewijzing sociale woningen in Anderlecht (19 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/19/pano-anderlecht-sociale-woningen-akremi/)
 
+[Parket van Brussel opent onderzoek naar mogelijke corruptie bij Anderlechtse Haard na Pano-reportage (21 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/21/pano-anderlechtse-haard-onderzoeken/)
+
+[Gedetineerde uit gevangenis van Nijvel heeft al jaren sociale woning in Anderlecht (21 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/21/anderlecht-sociale-woning-pano-gevangenis-nijvel/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
