@@ -172,5 +172,7 @@
 
 [Gedetineerde uit gevangenis van Nijvel heeft al jaren sociale woning in Anderlecht (21 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/21/anderlecht-sociale-woning-pano-gevangenis-nijvel/)
 
+[Spanning in de Brusselse regering: PS verzet zich tegen onderzoekscommissie over sociale woningen in Anderlecht (22 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/22/anderlecht-pano-sociale-woning-lotfi-mostefa/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
