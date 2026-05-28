@@ -174,5 +174,7 @@
 
 [Spanning in de Brusselse regering: PS verzet zich tegen onderzoekscommissie over sociale woningen in Anderlecht (22 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/22/anderlecht-pano-sociale-woning-lotfi-mostefa/)
 
+[Oud-premier Guy Verhofstadt moet voor correctionele rechtbank verschijnen omdat hij door rood reed in Brugge (27 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/27/verhofstadt-correctionele-rechtbank/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
