@@ -176,5 +176,9 @@
 
 [Oud-premier Guy Verhofstadt moet voor correctionele rechtbank verschijnen omdat hij door rood reed in Brugge (27 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/27/verhofstadt-correctionele-rechtbank/)
 
+[Brusselse regering plaatst gemeente Sint-Joost onder voogdij wegens zorgwekkende financiële situatie, burgemeester Emir Kir (PS) ontkent (28 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/28/sint-joost-emir-kir-financien-geld-voogdij-brussel/)
+
+[Huiszoeking bij huisvestingsmaatschappij Anderlechtse Haard en thuis bij voorzitter-schepen Lotfi Mostefa (PS) na Pano-onthullingen (28 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/28/huiszoeking-bij-huisvestingsmaatschappij-anderlechtse-haard/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
