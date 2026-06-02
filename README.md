@@ -180,5 +180,7 @@
 
 [Huiszoeking bij huisvestingsmaatschappij Anderlechtse Haard en thuis bij voorzitter-schepen Lotfi Mostefa (PS) na Pano-onthullingen (28 mei 2026)](https://www.vrt.be/vrtnws/nl/2026/05/28/huiszoeking-bij-huisvestingsmaatschappij-anderlechtse-haard/)
 
+[Compromis binnen Brusselse regering: er komt een 'korte' onderzoekscommissie naar sociale huisvesting in Anderlecht na Pano-reportage over schepen Lotfi Mostefa (PS) (1 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/01/pano-anderlecht-onderzoekscommissie-mostefa-ps-parlement/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
