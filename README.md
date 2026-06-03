@@ -182,5 +182,7 @@
 
 [Compromis binnen Brusselse regering: er komt een 'korte' onderzoekscommissie naar sociale huisvesting in Anderlecht na Pano-reportage over schepen Lotfi Mostefa (PS) (1 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/01/pano-anderlecht-onderzoekscommissie-mostefa-ps-parlement/)
 
+[Schepencollege van Anderlecht besluit om geen actie te ondernemen tegen schepen Lotfi Mostefa (PS) ondanks Pano-onthullingen over sociale woningen (2 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/02/schepencollege-anderlecht-besluit-om-geen-actie-te-ondernemen-te/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
