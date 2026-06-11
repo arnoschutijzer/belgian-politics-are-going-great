@@ -186,5 +186,7 @@
 
 [Vlaams minister-president Matthias Diependaele (N-VA) onder vuur na oproep om CM de rug toe te keren en over te stappen naar partijgelinkt Vlaams & Neutraal Ziekenfonds (5 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/05/vlaams-en-neutraal-ziekenfonds/)
 
+[Vastgoedbedrijf dient klacht in tegen PS-politicus Elio Di Rupo wegens corruptie en belangenvermenging in Ogeo/Land Invest-dossier (10 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/10/bedrijf-dient-klacht-in-tegen-elio-di-rupo-wegens-corruptie-in-z/)
+
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
