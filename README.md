@@ -186,11 +186,11 @@
 
 [Vlaams minister-president Matthias Diependaele (N-VA) onder vuur na oproep om CM de rug toe te keren en over te stappen naar partijgelinkt Vlaams & Neutraal Ziekenfonds (5 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/05/vlaams-en-neutraal-ziekenfonds/)
 
-[Vastgoedbedrijf dient klacht in tegen PS-politicus Elio Di Rupo wegens corruptie en belangenvermenging in Ogeo/Land Invest-dossier (10 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/10/bedrijf-dient-klacht-in-tegen-elio-di-rupo-wegens-corruptie-in-z/)
-
 [PS-getrouwen boycotten buitengewone raad van bestuur Anderlechtse Haard: door afwezigheid van 4 PS'ers geen quorum, voorzitter Mostefa kan vergadering annuleren (9 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/09/ps-getrouwen-boycotten-raad-van-bestuur-anderlechtse-haard/)
 
 ["18.000 euro huur naar eigen rekening": audit toont hoe personeel in Sint-Joost sociale woningen aan familie en vrienden gaf (9 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/09/sociale-woning-sint-joost-audit-pano/)
+
+[Vastgoedbedrijf dient klacht in tegen PS-politicus Elio Di Rupo wegens corruptie en belangenvermenging in Ogeo/Land Invest-dossier (10 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/10/bedrijf-dient-klacht-in-tegen-elio-di-rupo-wegens-corruptie-in-z/)
 
 ## not politics
 [Strafrechtelijk onderzoek gestart naar fraude bij magistratenexamen (4 maart 2024)](https://www.vrt.be/vrtnws/nl/2024/03/04/strafrechtelijk-onderzoek-gestart-naar-fraude-bij-magistratenexa/)
