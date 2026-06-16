@@ -191,3 +191,5 @@
 ["18.000 euro huur naar eigen rekening": audit toont hoe personeel in Sint-Joost sociale woningen aan familie en vrienden gaf (9 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/09/sociale-woning-sint-joost-audit-pano/)
 
 [Vastgoedbedrijf dient klacht in tegen PS-politicus Elio Di Rupo wegens corruptie en belangenvermenging in Ogeo/Land Invest-dossier (10 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/10/bedrijf-dient-klacht-in-tegen-elio-di-rupo-wegens-corruptie-in-z/)
+
+[Lotfi Mostefa (PS) weggestemd als voorzitter van Anderlechtse Haard na Pano-onthullingen over sociale woningen, PS noemt stemming ongeldig (15 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/15/raad-van-bestuur-anderlechtse-haard-tijdelijke-stap-opzij-mostef/)
