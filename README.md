@@ -193,3 +193,5 @@
 [Vastgoedbedrijf dient klacht in tegen PS-politicus Elio Di Rupo wegens corruptie en belangenvermenging in Ogeo/Land Invest-dossier (10 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/10/bedrijf-dient-klacht-in-tegen-elio-di-rupo-wegens-corruptie-in-z/)
 
 [Lotfi Mostefa (PS) weggestemd als voorzitter van Anderlechtse Haard na Pano-onthullingen over sociale woningen, PS noemt stemming ongeldig (15 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/15/raad-van-bestuur-anderlechtse-haard-tijdelijke-stap-opzij-mostef/)
+
+[Documenten verdwenen bij in opspraak gekomen huisvestingsmaatschappij Anderlechtse Haard tijdens lopend gerechtelijk onderzoek (19 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/19/anderlecht-sociale-woning-pano-documenten/)
