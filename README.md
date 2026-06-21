@@ -194,4 +194,6 @@
 
 [Lotfi Mostefa (PS) weggestemd als voorzitter van Anderlechtse Haard na Pano-onthullingen over sociale woningen, PS noemt stemming ongeldig (15 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/15/raad-van-bestuur-anderlechtse-haard-tijdelijke-stap-opzij-mostef/)
 
+[Rekenhof maakt brandhout van GIP-investeringsprogramma: politieke aanpassingen zonder verantwoording bij selectie Vlaamse infrastructuurwerken, minister Annick De Ridder (N-VA) verdedigt systeem (18 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/18/rekenhof-rapport-gip/)
+
 [Documenten verdwenen bij in opspraak gekomen huisvestingsmaatschappij Anderlechtse Haard tijdens lopend gerechtelijk onderzoek (19 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/19/anderlecht-sociale-woning-pano-documenten/)
