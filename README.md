@@ -197,3 +197,5 @@
 [Rekenhof maakt brandhout van GIP-investeringsprogramma: politieke aanpassingen zonder verantwoording bij selectie Vlaamse infrastructuurwerken, minister Annick De Ridder (N-VA) verdedigt systeem (18 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/18/rekenhof-rapport-gip/)
 
 [Documenten verdwenen bij in opspraak gekomen huisvestingsmaatschappij Anderlechtse Haard tijdens lopend gerechtelijk onderzoek (19 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/19/anderlecht-sociale-woning-pano-documenten/)
+
+[Belgisch onderzoeksrechter vaardigt Europees aanhoudingsbevel uit tegen ex-Eurocommissaris Dimitris Avramopoulos in Qatargate-onderzoek (23 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/23/voormalige-griekse-eurocommissaris-verdacht-van-betrokkenheid-bi/)
