@@ -199,3 +199,5 @@
 [Documenten verdwenen bij in opspraak gekomen huisvestingsmaatschappij Anderlechtse Haard tijdens lopend gerechtelijk onderzoek (19 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/19/anderlecht-sociale-woning-pano-documenten/)
 
 [Belgisch onderzoeksrechter vaardigt Europees aanhoudingsbevel uit tegen ex-Eurocommissaris Dimitris Avramopoulos in Qatargate-onderzoek (23 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/23/voormalige-griekse-eurocommissaris-verdacht-van-betrokkenheid-bi/)
+
+[Van miljoenenfraude verdachte gemeenteraadslid Stefanie Sander (ex-Vlaams Belang) zetelt opnieuw in gemeenteraad Houthulst (26 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/26/stefanie-sander-opnieuw-aanwezig-houthulst/)
