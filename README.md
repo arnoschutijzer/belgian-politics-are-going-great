@@ -201,3 +201,5 @@
 [Belgisch onderzoeksrechter vaardigt Europees aanhoudingsbevel uit tegen ex-Eurocommissaris Dimitris Avramopoulos in Qatargate-onderzoek (23 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/23/voormalige-griekse-eurocommissaris-verdacht-van-betrokkenheid-bi/)
 
 [Van miljoenenfraude verdachte gemeenteraadslid Stefanie Sander (ex-Vlaams Belang) zetelt opnieuw in gemeenteraad Houthulst (26 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/26/stefanie-sander-opnieuw-aanwezig-houthulst/)
+
+[Rapporteur onderzoekscommissie Anderlechtse Haard Marie Cruysmans (Les Engagés) stapt moegetergd op: "Hoorzittingen versterken vermoedens van structureel cliëntelisme, omzeilen van toewijzingsregels en publiek geld voor verkiezingscampagnes" (30 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/30/marie-cruysmans-stapt-op-anderlechtse-haard/)
