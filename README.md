@@ -203,3 +203,7 @@
 [Van miljoenenfraude verdachte gemeenteraadslid Stefanie Sander (ex-Vlaams Belang) zetelt opnieuw in gemeenteraad Houthulst (26 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/26/stefanie-sander-opnieuw-aanwezig-houthulst/)
 
 [Rapporteur onderzoekscommissie Anderlechtse Haard Marie Cruysmans (Les Engagés) stapt moegetergd op: "Hoorzittingen versterken vermoedens van structureel cliëntelisme, omzeilen van toewijzingsregels en publiek geld voor verkiezingscampagnes" (30 juni 2026)](https://www.vrt.be/vrtnws/nl/2026/06/30/marie-cruysmans-stapt-op-anderlechtse-haard/)
+
+[Onderzoek UGent: gemeenten waar Vlaamse ministers of parlementsleden wonen, krijgen gemiddeld een kwart meer project- en investeringssubsidies (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/gemeenten-waar-ministers-en-parlementsleden-wonen-ontvangen-meer/)
+
+[32 ex-parlementsleden (o.a. Coveliers, Van Parys, Sauwens en Coëme) verliezen rechtszaak om Wijninckx-pensioenplafond te ontlopen en "graaipensioen" van 9.563 euro te behouden (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/pensioen-parlement-hoger-plafond-rechter/)
