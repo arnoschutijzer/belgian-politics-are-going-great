@@ -207,3 +207,5 @@
 [Onderzoek UGent: gemeenten waar Vlaamse ministers of parlementsleden wonen, krijgen gemiddeld een kwart meer project- en investeringssubsidies (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/gemeenten-waar-ministers-en-parlementsleden-wonen-ontvangen-meer/)
 
 [32 ex-parlementsleden (o.a. Coveliers, Van Parys, Sauwens en Coëme) verliezen rechtszaak om Wijninckx-pensioenplafond te ontlopen en "graaipensioen" van 9.563 euro te behouden (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/pensioen-parlement-hoger-plafond-rechter/)
+
+[Lotfi Mostefa (PS) weigert vragen te beantwoorden in Brusselse onderzoekscommissie over sociale woningen in Anderlecht, beroept zich op zwijgrecht ondanks vier lopende gerechtelijke onderzoeken bij Anderlechtse Haard (2 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/02/lotfi-mostefa-pano-onderzoekscommssie-anderlecht/)
