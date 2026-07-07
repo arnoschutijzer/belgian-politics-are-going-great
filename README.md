@@ -211,3 +211,5 @@
 [Lotfi Mostefa (PS) weigert vragen te beantwoorden in Brusselse onderzoekscommissie over sociale woningen in Anderlecht, beroept zich op zwijgrecht ondanks vier lopende gerechtelijke onderzoeken bij Anderlechtse Haard (2 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/02/lotfi-mostefa-pano-onderzoekscommssie-anderlecht/)
 
 [Brussels Gewest dreigt in te grijpen bij Anderlechtse Haard: BGHM verstuurde al twee ingebrekestellingen (18 juni en 1 juli) en overweegt artikel 78 te activeren om een bijzondere commissaris aan te stellen die het bestuur vervangt (4 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/04/anderlechtse-haard-gewest-dreigt-in-te-grijpen/)
+
+[Ook N-VA-rapporteur Gilles Verstraeten stapt op bij onderzoekscommissie Anderlechtse Haard en spreekt van "schijncommissie": "Serieus onderzoek onmogelijk gemaakt door PS-druk, cruciale documenten pas op laatste moment geleverd, interne e-mails ontbreken nog altijd" (6 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/06/n-va-onderzoekscommissie-anderlechtse-haard/)
