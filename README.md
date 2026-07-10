@@ -213,3 +213,5 @@
 [Brussels Gewest dreigt in te grijpen bij Anderlechtse Haard: BGHM verstuurde al twee ingebrekestellingen (18 juni en 1 juli) en overweegt artikel 78 te activeren om een bijzondere commissaris aan te stellen die het bestuur vervangt (4 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/04/anderlechtse-haard-gewest-dreigt-in-te-grijpen/)
 
 [Ook N-VA-rapporteur Gilles Verstraeten stapt op bij onderzoekscommissie Anderlechtse Haard en spreekt van "schijncommissie": "Serieus onderzoek onmogelijk gemaakt door PS-druk, cruciale documenten pas op laatste moment geleverd, interne e-mails ontbreken nog altijd" (6 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/06/n-va-onderzoekscommissie-anderlechtse-haard/)
+
+[PS weigert machtswissel bij Anderlechtse Haard: raad van bestuur herverkiest Lotfi Mostefa (PS) als voorzitter met 5 stemmen op 9 (mede dankzij Les Engagés-bestuurder), ondanks lopende gerechtelijke onderzoeken en pas afgeronde parlementaire onderzoekscommissie; MR mikt nu op aanstelling van een regeringscommissaris (9 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/09/ps-weigert-machtswissel-anderlechtse-haard-lotfi-mostefa-blijft/)
