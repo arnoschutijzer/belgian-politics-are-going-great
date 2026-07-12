@@ -213,3 +213,7 @@
 [Brussels Gewest dreigt in te grijpen bij Anderlechtse Haard: BGHM verstuurde al twee ingebrekestellingen (18 juni en 1 juli) en overweegt artikel 78 te activeren om een bijzondere commissaris aan te stellen die het bestuur vervangt (4 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/04/anderlechtse-haard-gewest-dreigt-in-te-grijpen/)
 
 [Ook N-VA-rapporteur Gilles Verstraeten stapt op bij onderzoekscommissie Anderlechtse Haard en spreekt van "schijncommissie": "Serieus onderzoek onmogelijk gemaakt door PS-druk, cruciale documenten pas op laatste moment geleverd, interne e-mails ontbreken nog altijd" (6 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/06/n-va-onderzoekscommissie-anderlechtse-haard/)
+
+[Hittegolf eist 1.222 extra levens: noodnummer 112 functioneerde slecht met wachttijden tot 600 seconden op piekmomenten, minister Vandenbroucke (Vooruit) hekelt onderbezetting bij dienst van minister Quintin (MR) (3 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/03/hittedoden-oversterfte-112-vandenbroucke-quintin/)
+
+[PS weigert machtswissel bij Anderlechtse Haard: Lotfi Mostefa (PS) opnieuw voorgedragen en herverkozen als voorzitter, ondanks Pano-onthullingen, 4 lopende gerechtelijke onderzoeken en 143 uur hoorzittingen in de onderzoekscommissie — Les Engagés vervangt bestuurslid dat mee voor Mostefa stemde (9 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/09/ps-weigert-machtswissel-anderlechtse-haard-lotfi-mostefa-blijft/)
