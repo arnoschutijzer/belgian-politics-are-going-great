@@ -208,6 +208,8 @@
 
 [32 ex-parlementsleden (o.a. Coveliers, Van Parys, Sauwens en Coëme) verliezen rechtszaak om Wijninckx-pensioenplafond te ontlopen en "graaipensioen" van 9.563 euro te behouden (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/pensioen-parlement-hoger-plafond-rechter/)
 
+[Voormalig Schaarbeeks schepen Michel De Herde (ex-DéFI) verwezen naar correctionele rechtbank voor verkrachting minderjarige, aanranding van de seksuele integriteit, verzwaarde belaging, seksistisch gedrag en bezit van beelden van seksueel geweld tegen minderjarigen; parket identificeerde zeven slachtoffers, proces start 4 november 2026 (1 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/01/voormalig-schaarbeeks-schepen-michel-de-herde-naar-correctionele/)
+
 [Lotfi Mostefa (PS) weigert vragen te beantwoorden in Brusselse onderzoekscommissie over sociale woningen in Anderlecht, beroept zich op zwijgrecht ondanks vier lopende gerechtelijke onderzoeken bij Anderlechtse Haard (2 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/02/lotfi-mostefa-pano-onderzoekscommssie-anderlecht/)
 
 [Brussels Gewest dreigt in te grijpen bij Anderlechtse Haard: BGHM verstuurde al twee ingebrekestellingen (18 juni en 1 juli) en overweegt artikel 78 te activeren om een bijzondere commissaris aan te stellen die het bestuur vervangt (4 juli 2026)](https://www.vrt.be/vrtnws/nl/2026/07/04/anderlechtse-haard-gewest-dreigt-in-te-grijpen/)
