@@ -130,6 +130,8 @@
 
 [Annelies Verlinden (CD&V) werkte, voor ze minister werd, als advocaat voor bedrijf achter geflopte i-Police (31 januari 2026)](https://www.vrt.be/vrtnws/nl/2026/01/31/verlinden-ipolice-advocate/)
 
+[Brussels parket opent opsporingsonderzoek naar Brussels parlementslid Ilyas El Omari (Team Fouad Ahidar) wegens verduistering van publieke fondsen en valsheid in geschrifte: hij zou een door het Brussels Parlement betaalde parlementair medewerker hebben ingezet voor zijn privébedrijfjes, onder meer om vlees te kopen, facturen af te handelen, voertuigen te verkopen en panden te verhuren, terwijl zijn eigen parlementaire activiteit bijzonder schaars bleef (vier vragen in 2024, geen enkele in 2025); de deontologische commissie van het Brussels Parlement boog zich eind februari over de zaak en op 25 juni 2026 vroeg het parket de opheffing van zijn parlementaire onschendbaarheid, waartegen fractieleider Fouad Ahidar zich niet verzet: "Niemand staat boven de wet" (4 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/04/opsporingsonderzoek-naar-brussels-parlementslid/)
+
 [Twee vertrouwelingen van Didier Reynders in verdenking gesteld in witwasonderzoek (16 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/16/onderzoek-witwassen-didier-reynders-jean-claude-fontinoy-en-oliv/)
 
 [Raadkamer Brussel verwijst 5 verdachten in dossier-Samusocial door naar correctionele rechtbank (27 februari 2026)](https://www.vrt.be/vrtnws/nl/2026/02/27/raadkamer-verwijst-vijf-verdachten-in-dossier-samusocial-door-na/)
